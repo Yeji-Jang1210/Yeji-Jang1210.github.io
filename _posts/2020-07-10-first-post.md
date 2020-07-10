@@ -21,3 +21,5 @@ featured-img: first-post
 printf("hello world");
 ```
 
+깃허브로 포스팅을 하는데 도움을 받은 사이트를 첨부한다
+[BLEX의 깃허브 블로그 포스트 작성](https://www.youtube.com/watch?v=LyQgkZX2ZaM)
