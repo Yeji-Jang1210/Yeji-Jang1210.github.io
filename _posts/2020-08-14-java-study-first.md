@@ -3,7 +3,7 @@ layout: post
 title: "java복습-참조타입과 참조 변수"
 featured-img: first-post
 ---
-### 참조타입과 참조 변수
+# 참조타입과 참조 변수
 
 자바는 크게 기본타입과 참조타입으로 분류된다.
 
@@ -62,7 +62,7 @@ refVar1 != null //결과:true
 refVar2 == null //결과:true
 refVar2 != null //결과:false
 ```
-# NullPointerException
+### NullPointerException
 참조타입 변수를 잘못 사용하면 발생하는 **예외(Exception)**이다.
 
 **예외(Exception)** : 프로그램 실행 도중에 발생하는 오류
@@ -87,13 +87,13 @@ String name3 = new String("장예지");
 ```
 ![Image Alt String객체 ({{"/assets/img/posting/String객체.PNG"| relative_url}})
 
-# name1==name2의 결과는 *true* 이다.
+### name1==name2의 결과는 *true* 이다.
 
 name1과 name2는 동일한 문자열 리터럴로 생성된 객체를 참조하기 때문
 
 java에서는 문자열 리터럴이 동일하다면 String객체를 공유하게 되어있다.
 
-# name1==name3의 결과는 *false* 이다.
+### name1==name3의 결과는 *false* 이다.
 
 new 연산자로 만들어진 String 객체는 힙 영역에 새로운 객체를 만들때 사용하는
 **객체 생성 연산자** 이기 때문이다.
