@@ -100,6 +100,7 @@ new 연산자로 만들어진 String 객체는 힙 영역에 새로운 객체를
 
 만약 동일한 문자열인지 비교하고 싶은 경우에는 **equals() 메소드** 를 사용한다.
 예시) 원본문자열.equals(비교문자열);
+
 ```java
 boolean result = name1.equals(name3);
 ```
