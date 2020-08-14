@@ -51,7 +51,7 @@ null값도 초기값으로 사용할 수 있기 때문에 null로 초기화된 �
 
 다음 그림은 참조 변수가 null값과 참조하는 값을 가르키는 것이다.
 
-![Image Alt nullPointerException]({{"/assets/img/posting/null_nullpointException.png"| relative_url}})
+![Image Alt nullPointerException]({{"/assets/img/posting/nullPointerException.png"| relative_url}})
 
 참조타입이 null을 가르키는지 확인하는 연산
 
