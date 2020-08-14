@@ -104,3 +104,8 @@ new 연산자로 만들어진 String 객체는 힙 영역에 새로운 객체를
 ```java
 boolean result = name1.equals(name3);
 ```
+
+
+
+
+*출저 : 혼자 공부하는 자바 Chapter05-1*
