@@ -38,6 +38,9 @@ featured-img: first-post
     ```
     *널값으로 초기화 배열변수를 변수[인덱스]로 읽거나 저장 : NullPointerException 발생
 
+<br>
+<br>
+
 ## 배열의 생성 방법
 ---
 
@@ -70,6 +73,9 @@ featured-img: first-post
     실행결과)
 
     ![Image Alt 참조타입_배열1]({{"/assets/img/posting/Array_1.png"| relative_url}})
+
+<br>
+<br>
 
 1. new 연산자로 배열 생성  
     ->타입[] 변수 = new 타입[길이]; (길이:배열이 저장할 수 있는 값의 개수)
@@ -109,6 +115,9 @@ featured-img: first-post
 
      ![Image Alt 참조타입_배열2]({{"/assets/img/posting/Array_2.png"| relative_url}})
 
+<br>
+<br>
+
 ## 배열의 길이
 ---
 
@@ -119,6 +128,9 @@ int [] intArray = { 10, 20, 30};
 int num = intArray.length;  //길이를 확인하는 방법(배열 변수.length;)
 
 ```
+
+<br>
+<br>
 
 ## public static void main(String[] args){...}  
 ---  
@@ -145,6 +157,9 @@ public static void main(String[] args){
 }
 ```
 *정수 변환이 불가능한 문자열을 줬을경우:**NumberFormatException**이 발생한다*
+
+<br>
+<br>
 
 ## 객체를 참조하는 배열
 ---
@@ -188,6 +203,8 @@ strArray[1] == strArray[2] 의 결과는 **false** 가 나온다.
     false  
     true
 ```
+<br>
+<br>
 
 ## 배열 복사
 ---
@@ -228,8 +245,10 @@ public class ArrayCopyExample {
 }
 ```  
 ![Image Alt Array_copy_for]({{"/assets/img/posting/Array_copy_for.png"| relative_url}}) 
-참초타입 배열이 복사되면 복사되는 값이 객체의 번지이므로 새 배열의 항목은 *이전 배열의 항목이 참조하는 객체*와 동일하다.
 
+참조타입 배열이 복사되면 복사되는 값이 객체의 번지이므로 새 배열의 항목은 *이전 배열의 항목이 참조하는 객체*와 동일하다.
+<br>
+<br>
 ## 향상된 for문
 ---
 자바에서는 기존 for문과 다르게 배열이나 컬렉션을 좀 더 쉽게 처리하기 위해 향상된 for문을 제공한다.  
