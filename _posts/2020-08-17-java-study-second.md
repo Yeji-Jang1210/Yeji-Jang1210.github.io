@@ -108,11 +108,11 @@ featured-img: first-post
 
 배열의 길이를 확인하는 방법.
 
-    ```java
-    int [] intArray = { 10, 20, 30};
-    int num = intArray.length;  //길이를 확인하는 방법(배열 변수.length;)
+```java
+int [] intArray = { 10, 20, 30};
+int num = intArray.length;  //길이를 확인하는 방법(배열 변수.length;)
 
-    ```
+```
 
 ## public static void main(String[] args){...}    
 
