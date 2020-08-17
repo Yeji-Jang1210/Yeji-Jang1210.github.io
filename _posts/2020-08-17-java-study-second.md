@@ -4,8 +4,9 @@ title: "java복습-참조타입:배열"
 featured-img: first-post
 ---
 # 배열
-배열은 같은 타입의 데이터를 연속된 공간에 나열하고, 각 데이터에 **인덱스(index)**를 부여해놓은 자료구조이다.
-배열 변수는 참조 변수에 속한다. 배열도 객체이므로 **힙 영역**에 생성되고 배열 변수는 힙 영역의 배열 객체를 참조하게 된다.
+배열은 같은 타입의 데이터를 연속된 공간에 나열하고, 각 데이터에 **인덱스(index)**를 부여해놓은 자료구조이다.  
+배열 변수는 참조 변수에 속한다.  
+배열도 객체이므로 **힙 영역**에 생성되고 배열 변수는 힙 영역의 배열 객체를 참조하게 된다.
 
 배열의 선언은 두가지 방법으로 가능하다.
 
@@ -66,7 +67,7 @@ featured-img: first-post
 
     ![Image Alt 참조타입_배열1]({{"/assets/img/posting/Array_1.png"| relative_url}})
 
-1. new 연산자로 배열 생성
+1. new 연산자로 배열 생성  
     ->타입[] 변수 = new 타입[길이]; (길이:배열이 저장할 수 있는 값의 개수)
 
         *값의 목록을 가지고 있진 않지만, 향후 값들을 저장할 배열을 미리 만들고 싶을 때 사용한다.
@@ -118,7 +119,7 @@ int num = intArray.length;  //길이를 확인하는 방법(배열 변수.length
 
 -> 전부터 궁금했었는데 정확한 내용은 모르고 지나갔었다...
 
-**String[] args**는 왜 사용할까?
+**String[] args**는 왜 사용할까?  
 ->명령라인(명령 프롬포트)에서 위 코드를 java명령어로 실행하면 JVM은 길이가 0인 String 배열을 먼저 생성하고 main()메소드를 호출할 때 매개값으로 전달한다.
 
 ![Image Alt String_args]({{"/assets/img/posting/String_args.png"| relative_url}})
@@ -127,10 +128,8 @@ int num = intArray.length;  //길이를 확인하는 방법(배열 변수.length
 
 ![Image Alt Run_Configurations]({{"/assets/img/posting/Run_Configurations.png"| relative_url}})
 
-여기서는 매개변수의 값을 10과 20으로 받았다.
-    
-하지만 이것을 실행하게 되면 String 형인 "10","20"으로 인식하기 때문에 산술연산을 할 수 없다.
-
+여기서는 매개변수의 값을 10과 20으로 받았다.    
+하지만 이것을 실행하게 되면 String 형인 "10","20"으로 인식하기 때문에 산술연산을 할 수 없다.  
 산술연산을 하기 위해서는 문자열들을 **Integer.parsInt()** 메소드를 이용하여 정수로 변환 한다.
 
 예제)
@@ -140,4 +139,6 @@ public static void main(String[] args){
 }
 ```
 *정수 변환이 불가능한 문자열을 줬을경우:**NumberFormatException**이 발생한다*
+
+## 다차원 배열
 
