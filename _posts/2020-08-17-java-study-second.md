@@ -105,7 +105,8 @@ featured-img: first-post
      ![Image Alt 참조타입_배열2]({{"/assets/img/posting/Array_2.png"| relative_url}})
 
 ## 배열의 길이
-    배열의 길이를 확인하는 방법.
+
+배열의 길이를 확인하는 방법.
 
     ```java
     int [] intArray = { 10, 20, 30};
@@ -115,19 +116,20 @@ featured-img: first-post
 
 ## public static void main(String[] args){...}    
 
-    -> 전부터 궁금했었는데 정확한 내용은 모르고 지나갔었다...
+-> 전부터 궁금했었는데 정확한 내용은 모르고 지나갔었다...
+
 **String[] args**는 왜 사용할까?
-    ->명령라인(명령 프롬포트)에서 위 코드를 java명령어로 실행하면 JVM은 길이가 0인 String 배열을 먼저 생성하고 main()메소드를 호출할 때 매개값으로 전달한다.
+->명령라인(명령 프롬포트)에서 위 코드를 java명령어로 실행하면 JVM은 길이가 0인 String 배열을 먼저 생성하고 main()메소드를 호출할 때 매개값으로 전달한다.
 
-    ![Image Alt String_args]({{"/assets/img/posting/String_args.png"| relative_url}})
+![Image Alt String_args]({{"/assets/img/posting/String_args.png"| relative_url}})
 
-    매개변수 값은 [Run] - [Run Configurations] 메뉴를 선택하여 사용한다.
+매개변수 값은 [Run] - [Run Configurations] 메뉴를 선택하여 사용한다.
 
-    ![Image Alt Run_Configurations]({{"/assets/img/posting/Run_Configurations.png"| relative_url}})
+![Image Alt Run_Configurations]({{"/assets/img/posting/Run_Configurations.png"| relative_url}})
 
-    여기서는 매개변수의 값을 10과 20으로 받았다.
+여기서는 매개변수의 값을 10과 20으로 받았다.
     
-    하지만 이것을 실행하게 되면 String 형인 "10","20"으로 인식하기 때문에 산술연산을 할 수 없다.
+하지만 이것을 실행하게 되면 String 형인 "10","20"으로 인식하기 때문에 산술연산을 할 수 없다.
 
 산술연산을 하기 위해서는 문자열들을 **Integer.parsInt()** 메소드를 이용하여 정수로 변환 한다.
 
