@@ -3,7 +3,9 @@ layout: post
 title: "java복습-참조타입:배열"
 featured-img: first-post
 ---
+
 # 배열
+---
 배열은 같은 타입의 데이터를 연속된 공간에 나열하고, 각 데이터에 **인덱스(index)**를 부여해놓은 자료구조이다.  
 배열 변수는 참조 변수에 속한다.  
 배열도 객체이므로 **힙 영역**에 생성되고 배열 변수는 힙 영역의 배열 객체를 참조하게 된다.
@@ -11,6 +13,7 @@ featured-img: first-post
 배열의 선언은 두가지 방법으로 가능하다.
 
 ## 배열의 선언 방법
+---
 
 1. 타입[] 변수;
 
@@ -36,6 +39,7 @@ featured-img: first-post
     *널값으로 초기화 배열변수를 변수[인덱스]로 읽거나 저장 : NullPointerException 발생
 
 ## 배열의 생성 방법
+---
 
 1. 값 목록으로 배열 생성
     -> 타입[] 변수 = {값1, 값2, 값3...};
@@ -106,6 +110,7 @@ featured-img: first-post
      ![Image Alt 참조타입_배열2]({{"/assets/img/posting/Array_2.png"| relative_url}})
 
 ## 배열의 길이
+---
 
 배열의 길이를 확인하는 방법.
 
@@ -115,7 +120,8 @@ int num = intArray.length;  //길이를 확인하는 방법(배열 변수.length
 
 ```
 
-## public static void main(String[] args){...}    
+## public static void main(String[] args){...}  
+---  
 
 -> 전부터 궁금했었는데 정확한 내용은 모르고 지나갔었다...
 
@@ -141,9 +147,10 @@ public static void main(String[] args){
 *정수 변환이 불가능한 문자열을 줬을경우:**NumberFormatException**이 발생한다*
 
 ## 객체를 참조하는 배열
+---
 기본타입 배열은 각 항목에 직접 값을 갖고있지만  
 참조타입 배열은 **각 항목에 객체의 번지를 가지고 있음**  
-ex)  
+ex)
 ```java
 String[] strArray  = new String[3];
 strArray[0] = "java";
@@ -154,7 +161,7 @@ strArray[2] = "C#";
 ![Image Alt 다차원배열]({{"/assets/img/posting/다차원배열.png"| relative_url}})  
 
 따라서 String[] 배열의 항목도 String 변수와 동일하게 취급되어야한다.  
-예제)  
+예제)
 ```java
 public class ArrayReferenceObjectExample {
 	public static void main(String[] args) {		
@@ -171,13 +178,78 @@ public class ArrayReferenceObjectExample {
 ```  
 이렇게 생성했을 때, strArray[0] == strArray[1]의 결과는 true인가?  
 아니면 strArray[1] == strArray[2]의 결과는 true인가?
-
 ![Image Alt strArray]({{"/assets/img/posting/strArray_결과.png"| relative_url}})  
-String객체를 new 연산자로 생성하게 되면 무조건 새로운 String 객체가 생성되기 때문에 strArray[1] == strArray[2] 의 결과는 **false** 가 나온다.
+
+String객체를 new 연산자로 생성하게 되면 무조건 새로운 String 객체가 생성되기 때문에  
+strArray[1] == strArray[2] 의 결과는 **false** 가 나온다.
+```
     결과  
     true  
     false  
     true
+```
+
+## 배열 복사
+---
+1. for문으로 복사  
+```java
+public class ArrayCopyByForExample {
+	public static void main(String[] args) {
+		int[] oldIntArray = { 1, 2, 3 };
+		int[] newIntArray = new int[5];
+		
+		for(int i=0; i<oldIntArray.length; i++) {
+			newIntArray[i] = oldIntArray[i];
+		}
+		
+		for(int i=0; i<newIntArray.length; i++) {
+			System.out.print(newIntArray[i] + ", ");
+		}
+	}
+}
+```  
+![Image Alt Array_copy]({{"/assets/img/posting/Array_copy1.png"| relative_url}})  
+복사되지 않은 항목은 int[] 배열의 기본 초기값(0)으로 그대로 유지된다.
+
+1. System.arraycopy()로 배열 복사  
+    System.arraycopy(arr1,0,arr2,0,arr1.lengt); 방법으로 사용된다.   
+```java
+public class ArrayCopyExample {
+	public static void main(String[] args) {
+		String[] oldStrArray = { "java", "array", "copy" };
+		String[] newStrArray = new String[5];
+		
+		System.arraycopy( oldStrArray, 0, newStrArray, 0, oldStrArray.length);
+		
+		for(int i=0; i<newStrArray.length; i++) {
+			System.out.print(newStrArray[i] + ", ");
+		}
+	}
+}
+```  
+![Image Alt Array_copy_for]({{"/assets/img/posting/Array_copy_for.png"| relative_url}}) 
+참초타입 배열이 복사되면 복사되는 값이 객체의 번지이므로 새 배열의 항목은 *이전 배열의 항목이 참조하는 객체*와 동일하다.
+
+## 향상된 for문
+---
+자바에서는 기존 for문과 다르게 배열이나 컬렉션을 좀 더 쉽게 처리하기 위해 향상된 for문을 제공한다.  
+```java
+for(타입변수 : 배열){
+    실행문;
+}
+```
+![Image Alt 향상된_for문]({{"/assets/img/posting/향상된_for문.png"| relative_url}}) 
+1. for문 처음 실행시 배열(①)에서 가져올 첫 번째 값이 존재하는지 평가
+1. 가져올 값 존재시 해당 값을 변수(②)에 저장한다.
+1. 실행문(③) 실행
+1. 실행문(③)이 모두 실행되면 다시 루프를 돌아 가져올 다음 값이 존재하는지 평가
+1. 다음 항목 존재시 ② → ③ → ① 순서로 루프를 다시 진행, 없을경우 for문 종료  
+
+<br>
+<br>
+
+*출저)혼자 공부하는 자바(한빛미디어) 5-2배열*
+
 
 
 
