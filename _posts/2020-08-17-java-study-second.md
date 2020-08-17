@@ -140,5 +140,44 @@ public static void main(String[] args){
 ```
 *정수 변환이 불가능한 문자열을 줬을경우:**NumberFormatException**이 발생한다*
 
-## 다차원 배열
+## 객체를 참조하는 배열
+기본타입 배열은 각 항목에 직접 값을 갖고있지만  
+참조타입 배열은 **각 항목에 객체의 번지를 가지고 있음**  
+ex)  
+```java
+String[] strArray  = new String[3];
+strArray[0] = "java";
+strArray[1] = "C++";
+strArray[2] = "C#";
+```  
+위의 소스를 그림으로 나타내면 아래와 같다.
+![Image Alt 다차원배열]({{"/assets/img/posting/다차원배열.png"| relative_url}})  
+
+따라서 String[] 배열의 항목도 String 변수와 동일하게 취급되어야한다.  
+예제)  
+```java
+public class ArrayReferenceObjectExample {
+	public static void main(String[] args) {		
+		String[] strArray = new String[3];
+		strArray[0] = "Java";
+		strArray[1] = "Java";
+		strArray[2] = new String("Java");
+
+		System.out.println( strArray[0] == strArray[1]);
+		System.out.println( strArray[0] == strArray[2] );    
+		System.out.println( strArray[0].equals(strArray[2]) );
+	} 
+}
+```  
+이렇게 생성했을 때, strArray[0] == strArray[1]의 결과는 true인가?  
+아니면 strArray[1] == strArray[2]의 결과는 true인가?
+
+![Image Alt strArray]({{"/assets/img/posting/strArray_결과.png"| relative_url}})  
+String객체를 new 연산자로 생성하게 되면 무조건 새로운 String 객체가 생성되기 때문에 strArray[1] == strArray[2] 의 결과는 **false** 가 나온다.
+    결과  
+    true  
+    false  
+    true
+
+
 
