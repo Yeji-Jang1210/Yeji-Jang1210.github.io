@@ -32,6 +32,7 @@ today = Week.FRIDAY;
 <br>
 
 ## 열거타입 선언  
+---
 열거타입을 선언하려면 해당이름으로 소스파일(.java)을 생성해야한다.  
 보통 앞글자는 대문자로 쓴다.  
 열거타입 선언에 enum은 **반드시 소문자로 적어야한다**  
@@ -47,6 +48,7 @@ public enum LoginResult{ LOGIN_SUCCESS, LOGIN_FAILD }
 <br>
 
 ## Eclipse에서 열거타입 추가하기
+---
 1. Package Explorer뷰에서 프로젝트 생성 후 [File]-[New]-[Enum]메뉴를 선택
     ![Image Alt 열거타입_추가1]({{"/assets/img/posting/enum_type추가.png"| relative_url}})
 <br>
@@ -100,8 +102,14 @@ public class Exercise13 {
 이 소스를 사용하려면 열거타입을 어떻게 만들어야할까?  
 1. 소스가 있는 패키지 안에 열거타입을 추가해준다. 위의 소스에서 열거타입의 이름은 LoginResult로 주어졌음으로 이 이름을 사용한다.  
 ![Image Alt 열거타입_문제1]({{"/assets/img/posting/확인문제2_1.png"| relative_url}})  
+
+<br>
+
 1. result의 값은 LoginResult의 열거 상수가 주어지므로 아래와 같이 적어준다.  
 ![Image Alt 열거타입_문제2]({{"/assets/img/posting/확인문제2_2.png"| relative_url}})  
+
+<br>
+
 1. 아래의 결과를 확인하기 위해 System.out.println을 사용하여 결과를 확인한다.  
 ![Image Alt 열거타입_문제1]({{"/assets/img/posting/확인문제2_3.png"| relative_url}}) 
 
