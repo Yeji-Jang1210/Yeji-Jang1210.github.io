@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "java복습-열거타입"
-featured-img: 3rd-post
+featured-img: emile-perron-190221
 ---
 # 열거타입
 열거타입은 한정된 값인 **열거상수(enumeration constant)**중에서 하나의 상수를 저장하는 타입이다.  
