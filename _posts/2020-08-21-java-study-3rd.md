@@ -101,17 +101,13 @@ public class Exercise13 {
 ```  
 이 소스를 사용하려면 열거타입을 어떻게 만들어야할까?  
 1. 소스가 있는 패키지 안에 열거타입을 추가해준다. 위의 소스에서 열거타입의 이름은 LoginResult로 주어졌음으로 이 이름을 사용한다.  
-![Image Alt 열거타입_문제1]({{"/assets/img/posting/확인문제2_1.png"| relative_url}})  
-
-<br>
-
+    ![Image Alt 열거타입_문제1]({{"/assets/img/posting/확인문제2_1.png"| relative_url}})  
+    <br>
 1. result의 값은 LoginResult의 열거 상수가 주어지므로 아래와 같이 적어준다.  
-![Image Alt 열거타입_문제2]({{"/assets/img/posting/확인문제2_2.png"| relative_url}})  
-
-<br>
-
+    ![Image Alt 열거타입_문제2]({{"/assets/img/posting/확인문제2_2.png"| relative_url}})  
+    <br>
 1. 아래의 결과를 확인하기 위해 System.out.println을 사용하여 결과를 확인한다.  
-![Image Alt 열거타입_문제1]({{"/assets/img/posting/확인문제2_3.png"| relative_url}}) 
+    ![Image Alt 열거타입_문제1]({{"/assets/img/posting/확인문제2_3.png"| relative_url}}) 
 
 <br>
 <br>
