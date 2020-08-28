@@ -101,7 +101,7 @@ int result = Calculator.add(10,20);
     ![Image Alt 클래스생성_3]({{"/assets/img/posting/클래스생성_3.png"| relative_url}})  
     위 그림과 같이 .java가 자동으로 붙기 때문이다.  
 
-    <br><br>
+    <br>
     
     클래스를 만들었으면 기본적으로 아래와 같이 나온다.
     ```java
@@ -110,7 +110,6 @@ int result = Calculator.add(10,20);
     }
     ```
     <br>
-
     일반적으로는 소스파일당 하나의 클래스를 선언하는데 아래와 같이 두개도 가능하다.
     ```java
     public class 클래스이름1{
@@ -121,5 +120,153 @@ int result = Calculator.add(10,20);
     }   //컴파일 시 클래스이름1과 클래스이름2가 각각 생성된다.
     ```  
     위의 소스를 컴파일 한다면 <u>바이트 코드 파일(.class)</u>는 클래스를 선언한 개수만큼 생긴다. 소스 파일은 클래스 선언을 담고 있는 저장 단위일 뿐, *클래스 자체는 아니다.*  
+
+## 객체 생성과 클래스 변수
+---
+클래스로부터 객체를 생성하려면 아래와 같이 **new**연산자를 이용한다.  
+```java
+new 클래스();
+```  
+<br>
+
+### new 연산자
+    클래스로부터 객체를 생성시키는 연산자이다.  
+    new 연산자 뒤에는 생성자가 오는데 생성자는 클래스()형태를 가지고 있다.    
+<br>
+
+클래스로 선언된 변수에 new 연산자가 리턴한 객체의 번지를 저장하는 소스이다.  
+```java
+클래스 변수;
+변수 = new 클래스();
+```  
+<br>
+
+아래와 같이 클래스 선언과 객체 생성을 1개의 실행문으로 작성할 수도 있다. 
+```java
+클래스 변수 = new 클래스();
+```  
+<br>
+
+```java
+public class Stduent{
+
+}
+```
+<br>
+
+```java
+public class StudentExample{
+    public static void main(String[] args){
+        Student s1 = new Student();
+    }
+}
+```
+위의 소스에서 ***new연산자가*** 실행되는 과정이다.  
+
+![Image Alt 클래스_new연산자]({{"/assets/img/posting/클래스_new연산자.png"| relative_url}})  
+    1. new 연산자로 생성된 객체는 **메모리 힙(heap)영역**에 생성된다.  
+    2. 객체를 생성시킨 후 객체의 **번지**를 리턴한다.  
+    3. 이 주소를 **참조 타입인 클래스 변수**에 저장해두면 변수를 통해 객체 사용이 가능
+    *s1은 참조변수이므로 스택에 만들어진다.*
+<br><br>
+
+#### 클래스 선언
+---  
+
+```java
+public class Student{
+
+}
+```
+<br>
+
+#### 클래스로부터 객체 생성
+---
+
+```java
+public class StudentExample{
+    public static void main(String[] args){
+        Student s1 = new Student();
+        System.out.println("s1변수가 Student 객체를 참조합니다.");
+
+        Student s2 = new Stduent();
+        System.out.println("s2변수가 또 다른 Student 객체를 참조합니다.");
+    }
+}
+```  
+> 결과  
+![Image Alt StudentExample]({{"/assets/img/posting/StudentExample결과.png"| relative_url}})  
+<br>
+
+*※ s1과, s2는 new연산자를 통해 만들어 졌음으로 각각 다른 Student객체를 참조하고 있다.*  
+지난 포스팅 참조 : [참조타입과 참조 변수] (https://yeji-jang1210.github.io/java-study-first/)
+
+<br>
+ ※ Student 클래스는 라이브러리(API:Application Program Interface)용이고, StudentExample클래스는 실행 클래스 이다.  
+
+ ```
+    라이브러리 클래스 : 다른 클래스에서 이용할 목적(Student)
+    실행 클래스 : 프로그램의 실행 진입점인 main()메소드를 제공하는 역할(StudentExample)
+ ```  
+<br>
+
+라이브러리 클래스와 실행 클래스는  Student클래스 안에 main메소드를 작성하여 라이브러리인 동시에 실행 클래스로 만들 수도 있다. 
+
+```java
+public class Student{
+    //라이브러리로서의 코드(필드,생성자,메소드)
+    ...
+
+    //실행 코드
+    public static void main(String[] args){
+        Student s1 = new Student();
+        System.out.println("s1변수가 Student 객체를 참조합니다.");
+
+        Student s2 = new Stduent();
+        System.out.println("s2변수가 또 다른 Student 객체를 참조합니다.");
+    }
+}
+```
+*※위와 같이 작성 할 수 있지만 대부분의 객체지향 프로그램은 라이브러리와 실행 클래스가 분리되어 있다. 가급적이면 분리해서 작성하자*
+  
+<br><br>
+
+## 클래스의 구성
+---  
+클래스 구성의 예시이다.  
+```java
+public class ClassName{
+
+    //①필드
+    int fieldname;
+
+    //②생성자
+    ClassName(){...}
+
+    //③메소드
+    void methodName(){...}
+}
+```  
+<br>
+
+1. __필드(Field)__
+    객체의 데이터가 저장되는 곳이다.  
+    선언형태는 변수와 비슷하지만, 필드를 변수라고 부르지는 않는다.  
+    * 변수: 생성자와 메소드 내에서만 사용->생성자/메소드 종료시 **자동소멸**
+    * 필드: 객체가 소멸되지 않는 한 **객체와 함께 존재**
+    <br>
+1. __생성자(Constructor)__
+    <u>new 연산자</u>로 호출되는 특별한 중괄호({}) 블록이다.  
+    객체 생성시 초기화 역할 담당/메소드를 호출하여 객체 사용준비를 함  
+    메소드와 비슷하게 생겼지만, **클래스 이름으로 되어있고 리턴형이 없음**
+    <br>
+1. __메소드(Method)__
+    객체의 동작에 해당하는 실행 블록(중괄호 블록{})  
+    외부(호출한 곳)으로부터 매개값을 받아 실행에 이용하고, 실행 후 결과 값을 외부(호출한 곳)로 리턴해 줄 수도 있다.
+
+<br><br>
+
+*출저)혼자공부하는자바(한빛미디어)6-1객체지향프로그래밍.*       
+
 
 
