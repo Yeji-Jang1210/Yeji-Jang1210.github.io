@@ -147,6 +147,8 @@ new 클래스();
 ```  
 <br>
 
+---
+
 ```java
 public class Stduent{
 
@@ -166,7 +168,7 @@ public class StudentExample{
 ![Image Alt 클래스_new연산자]({{"/assets/img/posting/클래스_new연산자.png"| relative_url}})  
     1. new 연산자로 생성된 객체는 **메모리 힙(heap)영역**에 생성된다.  
     2. 객체를 생성시킨 후 객체의 **번지**를 리턴한다.  
-    3. 이 주소를 **참조 타입인 클래스 변수**에 저장해두면 변수를 통해 객체 사용이 가능
+    3. 이 주소를 **참조 타입인 클래스 변수**에 저장해두면 변수를 통해 객체 사용이 가능  
     *s1은 참조변수이므로 스택에 만들어진다.*
 <br><br>
 
@@ -199,7 +201,7 @@ public class StudentExample{
 <br>
 
 *※ s1과, s2는 new연산자를 통해 만들어 졌음으로 각각 다른 Student객체를 참조하고 있다.*  
-지난 포스팅 참조 : [참조타입과 참조 변수] (https://yeji-jang1210.github.io/java-study-first/)
+지난 포스팅 참조 : [참조타입과 참조 변수](https://yeji-jang1210.github.io/java-study-first/)
 
 <br>
  ※ Student 클래스는 라이브러리(API:Application Program Interface)용이고, StudentExample클래스는 실행 클래스 이다.  
@@ -254,12 +256,14 @@ public class ClassName{
     선언형태는 변수와 비슷하지만, 필드를 변수라고 부르지는 않는다.  
     * 변수: 생성자와 메소드 내에서만 사용->생성자/메소드 종료시 **자동소멸**
     * 필드: 객체가 소멸되지 않는 한 **객체와 함께 존재**
-    <br>
+<br>
+
 1. __생성자(Constructor)__
     <u>new 연산자</u>로 호출되는 특별한 중괄호({}) 블록이다.  
     객체 생성시 초기화 역할 담당/메소드를 호출하여 객체 사용준비를 함  
     메소드와 비슷하게 생겼지만, **클래스 이름으로 되어있고 리턴형이 없음**
-    <br>
+<br>
+
 1. __메소드(Method)__
     객체의 동작에 해당하는 실행 블록(중괄호 블록{})  
     외부(호출한 곳)으로부터 매개값을 받아 실행에 이용하고, 실행 후 결과 값을 외부(호출한 곳)로 리턴해 줄 수도 있다.
