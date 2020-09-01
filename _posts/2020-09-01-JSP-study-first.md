@@ -87,25 +87,17 @@ JetBrains가 아닌 <u>IntelliJ IDEA 2020.2.1</u>가 홈이다. 확인은 [시�
 1. 우측하단쪽에 톱니바퀴 모양 옆 [Configure]을 누르면 PlugIn이 있는데 들어가면 사용하고 싶은 것들을 Enable/Disable할지 설정 할 수 있다.  
 설정이 끝나면 NewProject로 만들어준다.  
     ![Image Alt IDEA_실행]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_1/IDEA_실행2.png"| relative_url}})   
-    
-<br>
 
 1. NewProject를 누르면 Enable한것들이 나온다.  
 우리는 JAVA를 사용해야 하므로 [Java Enterprise]를 누른 후 Test Runner을 TestNG로 설정해준다(사진에는 TestNG설정 전이다.)  
 
-    ![Image Alt IDEA_실행2]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_1/IDEA_실행1.png"| relative_url}})   
-
-<br>    
+    ![Image Alt IDEA_실행2]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_1/IDEA_실행1.png"| relative_url}})      
 
 1. Web Profile을 클릭후 next 로 넘어간다. 
     ![Image Alt IDEA_실행3]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_1/IDEA_실행3.png"| relative_url}})   
-     
-<br>
 
 1. Group과 Artifact를 설정해준다. Artifact를 바꿔주면 자동적으로 Name이 바뀐다.  
-    ![Image Alt IDEA_실행4]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_1/IDEA_실행4.png"| relative_url}})   
-    
-<br>    
+    ![Image Alt IDEA_실행4]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_1/IDEA_실행4.png"| relative_url}})     
 
 1.  최종화면
     ![Image Alt IDEA_실행5]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_1/IDEA_실행5.png"| relative_url}})   
@@ -140,17 +132,11 @@ JSP파일을 실행하려면 템플릿이 필요하다. TomCat을 사용하기 �
 1. Templates에 [Tomcat]-[local]을 선택 후 [Create configuration]을 눌러준다.  
      ![Image Alt JSP실행2]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_1/JSP실행2.png"| relative_url}})    
 
-<br>
-
 1. 사용하고 있는 톰캣 버전을 Name으로 지정해주고 tomcat의 home directory를 지정해준다.(tomcat home directory는 위에 나와있다.)  
      ![Image Alt JSP실행3]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_1/JSP실행3.png"| relative_url}})   
 
-<br>
-
 1. [Deployment]에 들어가 +버튼을 눌러 아래와 같이 추가해 주고 [ok]를 눌러준다.  
     ![Image Alt JSP실행4]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_1/JSP실행4.png"| relative_url}})   
-
-<br>
 
 1. [tomcat9.0.37]옆 아이콘을 클릭하면 tomcat 서버가 실행되면서 배포가 되며 동작이 된다.  
     ![Image Alt JSP실행5]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_1/JSP실행5.png"| relative_url}})   
