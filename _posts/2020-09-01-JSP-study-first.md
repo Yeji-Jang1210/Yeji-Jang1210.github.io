@@ -56,7 +56,7 @@ JDK(Java Development Kit) LTS, IDE, Java Web Application Server개발환경 구�
     압축을 푼 후, C드라이브나 D드라이브에 추가한다.  
     *C드라이브는 보통 window에서 보호가 되어있으므로 D드라이브에 추가하는 것을 권한다.*    
     
-    ![Image Alt 기본개발환경구축_7]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_1/기본개발환경구축_7.png"| relative_url}})  
+    ![Image Alt 기본개발환경구축_7]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_1/HomeDirectory.png"| relative_url}})  
 
 1. 마지막으로 재부팅을 해준다.  
 <br>
@@ -72,7 +72,8 @@ JDK(Java Development Kit) LTS, IDE, Java Web Application Server개발환경 구�
 아래는 IntelliJ IDEA의 홈 디렉터리 경로이다.  
 ![Image Alt 기본개발환경구축_9]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_1/기본개발환경구축_9.png"| relative_url}})  
 
-JetBrains가 아닌 ~~IntelliJ IDEA Educational Edition 2020.2.1~~ <u>IntelliJ IDEA 2020.2.1</u>가 홈이다. 확인은 [시스템속성]-[고급]-[환경변수]에서 확인이 가능하다.
-    근데 나중에 실행해보니 EDU에서는 사용해야하는 언어가 없는경우가 있어서 그냥 30일 체험판을 받았다..(IntelliJ IDEA 2020.2.1)  
+JetBrains가 아닌 ~~IntelliJ IDEA Educational Edition 2020.2.1~~ <u>IntelliJ IDEA 2020.2.1</u>가 홈이다. 확인은 [시스템속성]-[고급]-[환경변수]에서 확인이 가능하다.  
+  
+*근데 나중에 실행해보니 EDU에서는 사용해야하는 언어가 없는경우가 있어서 그냥 30일 체험판을 받았다..(IntelliJ IDEA 2020.2.1)*
 <br>
 
