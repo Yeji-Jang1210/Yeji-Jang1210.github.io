@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "JSP 공부:기본 개발 환경 구축1"
-featured-img: JSP-study.jpg
+featured-img: JSP-study
 ---
 
 # JSP 기본 개발 환경 구축 : 다운로드
@@ -16,7 +16,8 @@ JDK(Java Development Kit) LTS, IDE, Java Web Application Server개발환경 구�
     주소 : [IntelliJ IDEA](https://www.jetbrains.com/ko-kr/community/education/#students)
     ![Image Alt 기본개발환경구축_2]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_1/기본개발환경구축_2.png"| relative_url}})  
     *어찌저찌 라이센스가 등록은 된 것 같다..(영어를 몰라서 조금 복잡했음)*
-    대학교 이메일로 등록을 했으면 대학교 메일로 가입하라는 메일이 하나 온다 그리고나서 회원가입을 하면 라이센스가 등록이 되어 교육용 IntelliJ IDEA를 사용 할 수 있는 것 같다.  
+    대학교 이메일로 등록을 했으면 대학교 메일로 가입하라는 메일이 하나 온다.  
+    그리고나서 회원가입을 하면 라이센스가 등록이 되어 교육용 IntelliJ IDEA를 사용 할 수 있는 것 같다.  
 
 1. Apache Tomcat에 접속해 zip파일로 받는다.
     주소 : [Apache Tomcat](http://tomcat.apache.org/download-90.cgi)
