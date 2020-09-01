@@ -48,7 +48,8 @@ JDK(Java Development Kit) LTS, IDE, Java Web Application Server개발환경 구�
 1. apache-tomcat-9.0.37
     압축을 푼 후, C드라이브나 D드라이브에 추가한다.  
     *C드라이브는 보통 window에서 보호가 되어있으므로 D드라이브에 추가하는 것을 권한다.*    
-    ![Image Alt 기본개발환경구축_7]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_1/기본개발환경구축_7.png"| relative_url}})
+    
+    ![Image Alt 기본개발환경구축_7]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_1/기본개발환경구축_7.png"| relative_url}})  
 
 1. 마지막으로 재부팅을 해준다.  
 <br>
