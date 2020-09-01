@@ -70,7 +70,7 @@ JDK(Java Development Kit) LTS, IDE, Java Web Application Server개발환경 구�
 
 <br>
 아래는 IntelliJ IDEA의 홈 디렉터리 경로이다.  
-![Image Alt 기본개발환경구축_9]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_1/기본개발환경구축_9.png"| relative_url}})  
+![Image Alt 기본개발환경구축_9]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_1/IDEA_HomeDirectory.png"| relative_url}})  
 
 JetBrains가 아닌 ~~IntelliJ IDEA Educational Edition 2020.2.1~~ <u>IntelliJ IDEA 2020.2.1</u>가 홈이다. 확인은 [시스템속성]-[고급]-[환경변수]에서 확인이 가능하다.  
   
