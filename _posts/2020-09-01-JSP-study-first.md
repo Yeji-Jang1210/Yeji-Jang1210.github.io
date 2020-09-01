@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "JSP 공부:기본 개발 환경 구축1"
+title: "JSP 공부:기본 개발 환경 구축"
 featured-img: JSP-study
 ---
 
-# JSP 기본 개발 환경 구축 : 다운로드
+# JSP 기본 개발 환경 구축1 : 다운로드
 ---
 JDK(Java Development Kit) LTS, IDE, Java Web Application Server개발환경 구축.  
 1. adoptopenjdk.net에 접속해 필요한 파일을 다운 받는다.  
@@ -27,7 +27,7 @@ JDK(Java Development Kit) LTS, IDE, Java Web Application Server개발환경 구�
 <br>
 <br>
 
-# JSP 기본 개발 환경 구축 : 설치
+# JSP 기본 개발 환경 구축1 : 설치
 ---
 ![Image Alt 기본개발환경구축_4]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_1/기본개발환경구축_4.png"| relative_url}})  
 세개의 다운받은 파일을 하나씩 설치 해준다.  
@@ -51,3 +51,18 @@ JDK(Java Development Kit) LTS, IDE, Java Web Application Server개발환경 구�
     ![Image Alt 기본개발환경구축_7]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_1/기본개발환경구축_7.png"| relative_url}})
 
 1. 마지막으로 재부팅을 해준다.  
+<br>
+<br>
+
+# JSP 기본 개발 환경 구축2
+---
+자바의 홈 디렉터리는 bin을 감싸고있는 디렉터리를 말한다.
+즉 아래 그림의 경로이다.  
+![Image Alt 기본개발환경구축_8]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_1/기본개발환경구축_8.png"| relative_url}})  
+
+<br>
+아래는 IntelliJ IDEA의 홈 디렉터리 경로이다.  
+![Image Alt 기본개발환경구축_9]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_1/기본개발환경구축_9.png"| relative_url}})  
+
+*JetBrains가 아닌 <u>IntelliJ IDEA Educational Edition 2020.2.1</u>가 홈이다. 확인은 [시스템속성]-[고급]-[환경변수]에서 확인이 가능하다.*
+
