@@ -17,7 +17,9 @@ JDK(Java Development Kit) LTS, IDE, Java Web Application Server개발환경 구�
     ![Image Alt 기본개발환경구축_2]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_1/기본개발환경구축_2.png"| relative_url}})  
     *어찌저찌 라이센스가 등록은 된 것 같다..(영어를 몰라서 조금 복잡했음)*
     대학교 이메일로 등록을 했으면 대학교 메일로 가입하라는 메일이 하나 온다.  
-    그리고나서 회원가입을 하면 라이센스가 등록이 되어 교육용 IntelliJ IDEA를 사용 할 수 있는 것 같다.  
+    그리고나서 회원가입을 하면 라이센스가 등록이 되어 교육용 IntelliJ IDEA를 사용 할 수 있는 것 같다.
+
+
 
 1. Apache Tomcat에 접속해 zip파일로 받는다.
     주소 : [Apache Tomcat](http://tomcat.apache.org/download-90.cgi)
@@ -43,7 +45,12 @@ JDK(Java Development Kit) LTS, IDE, Java Web Application Server개발환경 구�
     ![Image Alt 기본개발환경구축_6]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_1/기본개발환경구축_6.png"| relative_url}})  
     [Next]를 누른 뒤 Install을 눌러 설치를 한다.  
 
-    *[시스템]-[시스템속성]-[고급]-[환경변수]에 들어가 보면 환경변수가 Intellij 경로가 추가된 것을 확인할 수 있다*
+    *[시스템]-[시스템속성]-[고급]-[환경변수]에 들어가 보면 환경변수가 Intellij 경로가 추가된 것을 확인할 수 있다*  
+
+    <br>
+    *근데 나중에 실행해보니 사용해야하는 언어가 없는경우가 있어서 그냥 30일 체험판을 받았다..설치 방법에서는 별 다른 것은 없다.*
+
+
 
 1. apache-tomcat-9.0.37
     압축을 푼 후, C드라이브나 D드라이브에 추가한다.  
@@ -65,5 +72,7 @@ JDK(Java Development Kit) LTS, IDE, Java Web Application Server개발환경 구�
 아래는 IntelliJ IDEA의 홈 디렉터리 경로이다.  
 ![Image Alt 기본개발환경구축_9]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_1/기본개발환경구축_9.png"| relative_url}})  
 
-*JetBrains가 아닌 <u>IntelliJ IDEA Educational Edition 2020.2.1</u>가 홈이다. 확인은 [시스템속성]-[고급]-[환경변수]에서 확인이 가능하다.*
+JetBrains가 아닌 ~~IntelliJ IDEA Educational Edition 2020.2.1~~ <u>IntelliJ IDEA 2020.2.1</u>가 홈이다. 확인은 [시스템속성]-[고급]-[환경변수]에서 확인이 가능하다.
+    근데 나중에 실행해보니 EDU에서는 사용해야하는 언어가 없는경우가 있어서 그냥 30일 체험판을 받았다..(IntelliJ IDEA 2020.2.1)  
+<br>
 
