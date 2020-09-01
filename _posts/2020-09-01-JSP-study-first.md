@@ -20,7 +20,7 @@ JDK(Java Development Kit) LTS, IDE, Java Web Application Server개발환경 구�
     그리고나서 회원가입을 하면 라이센스가 등록이 되어 교육용 IntelliJ IDEA를 사용 할 수 있는 것 같다.  
     <br>
 
-    ![Image Alt IDEA_다운로드]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_1/IDEA_다운로드.png"| relative_url}})
+    ![Image Alt IDEA_다운로드]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_1/IDEA_다운.png"| relative_url}})
 
     라이센스창에 들어가서 다운로드를 누르고 받으면 된다.  
 
