@@ -50,11 +50,7 @@ JDK(Java Development Kit) LTS, IDE, Java Web Application Server개발환경 구�
     [Next]를 누른 뒤 Install을 눌러 설치를 한다.  
 
     *[시스템]-[시스템속성]-[고급]-[환경변수]에 들어가 보면 환경변수가 Intellij 경로가 추가된 것을 확인할 수 있다*  
-
-    <br>
     *근데 나중에 실행해보니 다른걸 받아서 안뜨는거였다.. 설치 방법에서는 별 다른 것은 없다.*
-
-
 
 1. apache-tomcat-9.0.37
     압축을 푼 후, C드라이브나 D드라이브에 추가한다.  
