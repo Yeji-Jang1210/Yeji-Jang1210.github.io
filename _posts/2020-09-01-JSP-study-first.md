@@ -2,6 +2,7 @@
 layout: post
 title: "JSP 공부:기본 개발 환경 구축"
 featured-img: JSP-study
+categories : [JSP]
 ---
 
 # JSP 기본 개발 환경 구축1 : 다운로드

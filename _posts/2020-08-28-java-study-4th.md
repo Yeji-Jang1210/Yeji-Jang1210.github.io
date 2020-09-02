@@ -2,6 +2,7 @@
 layout: post
 title: "java복습-클래스:객체지향 프로그래밍"
 featured-img: emile-perron-190221
+categories : [JAVA]
 ---
 
 # 객체지향 프로그래밍

@@ -2,6 +2,7 @@
 layout : post
 title : "iOS공부 : 01주차"
 featured-img: ios-study
+categories : [iOS]
 ---
 # 1주차 OT
 ---
