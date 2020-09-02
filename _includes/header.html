@@ -1,4 +1,9 @@
 <header class="header" itemscope itemtype="http://schema.org/SiteNavigationElement" aria-label="Main navigation">
+  {% capture site_categories %}
+  {% for category in site.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}
+  {% endfor %}{% endcapture %}
+{% assign categories_list = site_categories | split:',' | sort %}
+
   <div class="container">
     <div class="header__inner">
       <a class="header__logo" href="{{ '/' | relative_url }}">
