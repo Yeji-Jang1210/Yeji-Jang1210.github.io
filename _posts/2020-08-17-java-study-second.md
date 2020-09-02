@@ -2,7 +2,6 @@
 layout: post
 title: "java복습-참조타입:배열"
 featured-img: first-post
-categories : [JAVA]
 ---
 
 # 배열

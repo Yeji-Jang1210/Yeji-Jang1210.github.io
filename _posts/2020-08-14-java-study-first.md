@@ -2,7 +2,6 @@
 layout: post
 title: "java복습-참조타입과 참조 변수"
 featured-img: first-post
-categories : [JAVA]
 ---
 # 참조타입과 참조 변수
 
