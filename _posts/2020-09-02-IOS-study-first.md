@@ -25,7 +25,7 @@ featured-img: ios-study
 
     아직 Swoft언어를 배우지 않았지만 for반복문 구조만 살펴보면,  
 
-    ### for문 구조
+    <b>for문 구조 </b>
     ```Swift
         for i in 1...10 {       
             print("Number: \(i)")            
