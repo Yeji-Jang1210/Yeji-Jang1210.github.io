@@ -1,9 +1,5 @@
 <header class="header" itemscope itemtype="http://schema.org/SiteNavigationElement" aria-label="Main navigation">
-  {% capture site_categories %}
-  {% for category in site.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}
-  {% endfor %}{% endcapture %}
-{% assign categories_list = site_categories | split:',' | sort %}
-
+  
   <div class="container">
     <div class="header__inner">
       <a class="header__logo" href="{{ '/' | relative_url }}">
@@ -16,7 +12,7 @@
           <a class="header__link" href="{{ '/' | relative_url }}" itemprop="url"><span itemprop="name">Home</span></a>
           <a class="header__link" href="{{ '/about' | relative_url }}" itemprop="url"><span itemprop="name">About</span></a>
           <a class="header__link" href="{{ '/contact' | relative_url }}" itemprop="url"><span itemprop="name">Contact</span></a>
-          <a class="header__link" href="{{ '/category/index.html' | relative_url }}" itemprop="url"><span itemprop="name">Category</span></a>
+          <a class="header__link" href="{{ '/categories/index.html' | relative_url }}" itemprop="url"><span itemprop="name">Category</span></a>
         </div>
       </nav>
       <div class="header__toggle">
