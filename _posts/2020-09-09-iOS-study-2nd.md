@@ -70,7 +70,7 @@ Influenced by | objective-C, Rust, Haskell, Ruby, Python, C#, CLU, D
 <br>
 
 * 정수(소수점이 없는 수)를 저장하는데 사용한다.
-* \(출력하고 싶은 변수나 상수)
+* \ (출력하고 싶은 변수나 상수)
     ex)
     ```swift
     print("Int32 Min =\(Int32.min) Int32 Max = \(Int32.max)")  
@@ -151,7 +151,7 @@ Influenced by | objective-C, Rust, Haskell, Ruby, Python, C#, CLU, D
     * \n : 개행
     * \r : 캐리지 리턴(carriage return)
     * \t : 수평 탭
-    * \\ : 역슬래시
+    * \ \ : 역슬래시
     * \" : 큰따옴표(문자열 선언문에 큰따옴표를 쓰고 싶을 경우 사용)
     * \u{nn} : nn위치에 유니코드 문자를 표현하는 두개의 16진수가 배치되는 1바이트 유니코드 스칼라
     * \u{nnnn} : 2바이트 유니코드 스칼라
