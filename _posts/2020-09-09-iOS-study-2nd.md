@@ -67,7 +67,6 @@ Influenced by | objective-C, Rust, Haskell, Ruby, Python, C#, CLU, D
 
 #### 정수형 데이터 타입 : Int
 ---
-<br>
 
 * 정수(소수점이 없는 수)를 저장하는데 사용한다.
 * \ (출력하고 싶은 변수나 상수)
@@ -81,7 +80,6 @@ Influenced by | objective-C, Rust, Haskell, Ruby, Python, C#, CLU, D
 
 #### 부동소수점형 데이터 타입 : Double
 ---
-<br>
 
 * 소수점이 있는 숫자이다.  
 * **Float**와 **Double** 타입을 제공함
@@ -96,7 +94,6 @@ Influenced by | objective-C, Rust, Haskell, Ruby, Python, C#, CLU, D
 
 #### 부울 데이터 타입 : Bool
 ---
-<br>
 
 * 참 또는 거짓(1 또는 0) 조건을 처리할 데이터 타입  
 * Boolean 데이터 타입을 처리하기 위해 두 개의 불리언 상수값(true/false) 사용  
@@ -108,8 +105,7 @@ Influenced by | objective-C, Rust, Haskell, Ruby, Python, C#, CLU, D
 <br><br>
 
 #### 문자 데이터 타입 : Character
----
-<br>    
+---   
 
 * 문자, 숫자, 문장 부호, 심볼 같은 유니코드(Unicode) 문자 하나를 저장
     * 스위프트에서의 문자들은 문자소 묶음(grapheme cluster)의 형태로 저장
@@ -127,7 +123,6 @@ Influenced by | objective-C, Rust, Haskell, Ruby, Python, C#, CLU, D
 
 #### 문자열 데이터 타입 : String
 ---
-<br>
 
 * 단어나 문장을 구성하는 **일련의 문자**
 * 저장, 검색, 비교, 문자열 연결, 수정 등의 기능을 포함
@@ -144,7 +139,6 @@ Influenced by | objective-C, Rust, Haskell, Ruby, Python, C#, CLU, D
 
 #### 특수 문자/이스케이프 시퀀스
 ---
-<br>
 
 * 표준 문자 세트뿐만 아니라 문자열에 개행, 탭, 또는 유니코드 값과 같은 항목을 지정할 수 있는 여러 특수 문자도 있다.  
 * 일반적으로 많이 사용되는 특수 문자
@@ -161,7 +155,6 @@ Influenced by | objective-C, Rust, Haskell, Ruby, Python, C#, CLU, D
 
 #### 변수 : var
 ---
-<br>       
 
 * 기본적으로 변수(variable)는 프로그램에서 사용될 데이터를 저장하기 위한 메모리 공간이다.  
 * 변수에 할당된 값은 **변경이 가능**
@@ -175,7 +168,6 @@ Influenced by | objective-C, Rust, Haskell, Ruby, Python, C#, CLU, D
 
 #### 상수 : let
 ---
-<br>
 
 * 상수(constant)는 데이터 값을 저장하기 위하여 메모리 내의 명명된 공간을 제공한다는 점에서 변수와 비슷하다.  
 * 어떤 값이 **한번 할당되면 이후에 변경이 불가능**
@@ -190,7 +182,6 @@ Influenced by | objective-C, Rust, Haskell, Ruby, Python, C#, CLU, D
 
 #### 타입 어노테이션(type annotation)과 타입 추론
 ---
-<br>
 
 * 스위프트는 타입 안전(type safe) 프로그래밍 언어이다.  
 * 상수와 변수의 타입을 식별하는 방법은 두가지이다.  
@@ -212,7 +203,6 @@ Influenced by | objective-C, Rust, Haskell, Ruby, Python, C#, CLU, D
 
 #### 튜플(Tuple)
 ---
-<br>
 
 * 여러 값을 하나의 개체에 일시적으로 묶는 방법이다.  
 * 튜플에 저장되는 항목들은 어떠한 타입도 될 수 있으며, 저장된 값들이 모두 동일한 타입이어야 한다는 제약도 없음
