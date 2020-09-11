@@ -12,7 +12,8 @@ permalink : /category/
       {% if node.title != null %}
         {% if node.layout == "category" %}
           <li><a class="category-link {% if page.url == node.url %} active{% endif %}"
-          href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>
+          href="{{ site.baseurl }}{{ node.url }}">
+          {{ node.title }}</a></li>
         {% endif %}
       {% endif %}
     {% endfor %}
