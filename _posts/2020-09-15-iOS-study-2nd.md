@@ -22,20 +22,17 @@ print(Int("100"))   //결과 : Optional(100)
 * 옵셔널 자료형 선언 방법
     * 자료형 뒤에 [?]나[!]를 붙여준다. 
     ex)  
-    ```swift
-    var myNum : Int?  //옵셔널 정수형 myNum변수 선언  
-
-
+```swift
+    var myNum : Int?  //옵셔널 정수형 myNum변수 선언     
     myNum = 8
     print(myNum)
     //결과 : Optional(8)
-
-    ```  
+```  
     myNum의 자료형을 옵셔널타입으로 지정했기 때문에 결과는 8이 아닌 Optional(8)이 나오는 것이다.  
     Optional()이 나오는 것이 싫다면 아래와 같이 옵셔널을 풀어주면 된다.  
-    ```swift
+```swift
     print(myNum!)  //결과 : 8
-    ```
+```
 <br>
 
 
