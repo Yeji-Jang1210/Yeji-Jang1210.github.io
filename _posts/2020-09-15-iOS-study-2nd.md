@@ -139,9 +139,9 @@ myNum = 8
 ---
 as 연산자를 이용하여 타입변환(type casting)이 가능하다. 
  
-| ---- | Upcasting | Downcasting |
+|  | Upcasting | Downcasting |
 | as   | 자식인스턴스 as 부모클래스 | as? : 성공 확신이 없을 경우 사용(변환 안되면 : crash) |
-|--- | --- | as! : 성공 확신이 있을 경우 사용 |
+| | | as! : 성공 확신이 있을 경우 사용 |
  
 
 
