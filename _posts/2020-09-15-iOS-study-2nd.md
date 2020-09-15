@@ -166,8 +166,54 @@ if a is A        //a가 A클래스인가?
 {
     print("Yes")
 }
-```    
- 
+```
+<br><br>
+
+# Any vs AnyObject(Protocol)
+---
+|    | Any | AnyObject |
+| 허용범위 | 클래스, 구조체,열거형 함수타입도 가능 | 클래스의 인스턴스만 가능(구조체,열거형 허용 x) |  
+Any가 AnyObject보다 더 포괄적인 개념이다. 
+* AnyObject 추가설명
+    * 범용타입으로 상속관계가 아니라도 타입 캐스팅이 가능한 타입
+    * 어떤 클래스의 객체도 저장이 가능하다.       
+
+<br><br>
+
+# 연산자
+---   
+swift에서 사용하는 연산자를 보자  
+
+## 증가/감소 연산자
+---
+※swift3에서 x++,x--는 사라져서 사용이 불가하다.  
+* x++ : x+=1, x = x+1을 사용  
+* x-- : x-=1, x = x-1을 사용  
+
+## 범위 연산자
+---
+1. 닫힌 범위 연산자(closed range operator)
+    * x...y : x에서 시작해서 y로 끝나는 범위에 포함돈 숫자
+        * ex) 1..5 : 1,2,3,4,5
+1. 반 열린 범위 연산자(half-open range operator)
+    * x..< y : x부터 시작하여 y가 포함되지 않는 모든 숫자
+        * ex) 1..<5 : 1,2,3,4  
+ 1. One-Sided Ranges : 배열  
+    * ex) 
+    ```swift
+    let names = ["A","B","C","D"]
+    for name in names[2...]{
+        print(name)
+    }     //결과 : C D
+    ```
+
+## Nil-Coalescing Operator (Nil 합병 연산자) [??]
+---
+* 옵셔널 변수의 값이 nil 이면 다음 값으로 할당됨  
+
+
+
+
 
 
 
