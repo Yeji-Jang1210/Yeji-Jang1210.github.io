@@ -141,13 +141,12 @@ as 연산자를 이용하여 타입변환(type casting)이 가능하다.
  
 1. Upcasting  
 
-| --- | Upcasting |
+|  | Upcasting |
 | as | 자식인스턴스 <u>as</u> 부모클래스 |
-<br>
 
 1. Downcasting  
 
-| --- | Downcasting | 사용하는 방법 |
+|  | Downcasting | 사용하는 방법 |
 | as! | 부모인스턴스 <u>as!</u> 자식클래스 | 반드시 성공한다는 확신이 있을 때(강제변환 : forced conversion) |
 | as? | 부모인스턴스 <u>as?</u> 자식클래스 | 확신이 없을 경우 |  
 
