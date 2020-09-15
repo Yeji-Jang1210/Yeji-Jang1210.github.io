@@ -45,7 +45,7 @@ ex)
 ```  
 만약 myNum을 처음 선언할 때 값을 넣어주지 않으면 자동적으로 myNum변수는 `nil`이 된다.  
 이 때, myNum을 forced unwrapping하려고 하면 오류가 나온다.(값이 없기 때문)  
-
+ex)
 ```swift
 var myNum : Int?    //옵셔널 정수형 myNum선언
 myNum = 8
@@ -62,7 +62,6 @@ else {
 <br>
 
 1. **Optional binding**  
-
 옵셔널 바인딩은 느낌표 없이 옵셔널변수에 할당된 값을 임시 변수 또는 상수에 할당하여 값을 언레핑 할 수 있다.   
 ex)  let 상수를 이용한 옵셔널바인딩  
 ```swift
