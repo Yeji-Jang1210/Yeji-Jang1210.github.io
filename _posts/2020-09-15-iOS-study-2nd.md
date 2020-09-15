@@ -147,10 +147,26 @@ as 연산자를 이용하여 타입변환(type casting)이 가능하다.
 1. Downcasting  
 
 |  | Downcasting | 사용하는 방법 |
-| as! | 부모인스턴스 <u>as!</u> 자식클래스 | 반드시 성공한다는 확신이 있을 때(강제변환 : forced conversion) |
-| as? | 부모인스턴스 <u>as?</u> 자식클래스 | 확신이 없을 경우 |  
+| **as!** | 부모인스턴스 <u>as!</u> 자식클래스 | 반드시 성공한다는 확신이 있을 때(강제변환 : forced conversion)/(변환 안되면 : crash) |
+| **as?** | 부모인스턴스 <u>as?</u> 자식클래스 | 확신이 없을 경우 |  
 
-※ `as?`로 Downcasting했을경우 **옵셔널타입**으로 변환된다
+※ `as?`로 Downcasting했을경우 **옵셔널타입**으로 변환된다.  
+
+<br><br>
+
+# 타입검사 (is)
+---
+* 인스턴스가 어떤 클래스인지 알고 싶을때 사용한다.  
+    * is 키워드를 사용함 : 인스턴스 is 클래스
+ex)    
+```swift
+class A { }       //클래스 생성
+var a : A = A()  //A로부터 인스턴스 a를 만듬 A():디폴트 생성자
+if a is A        //a가 A클래스인가?
+{
+    print("Yes")
+}
+```    
  
 
 
