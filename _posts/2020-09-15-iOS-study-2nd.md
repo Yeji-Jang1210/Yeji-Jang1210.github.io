@@ -127,7 +127,7 @@ myNum = 8
 ## 형변환(Upcasting/Downcasting)
 ---
 형변환은 상속관계가 있는 클래스들 끼리만 가능하다.  
-![Image Alt 형변환]({{"/assets/img/posting/Study_iOS_img/Study_iOS_post_3/형변환.png"| relative_url}})
+ ![Image Alt 형변환]({{"/assets/img/posting/Study_iOS_img/Study_iOS_post3/형변환.png"| relative_url}}) 
 1. Upcasting
     * Upcating이 안전한 이유 : 자식클래스는 부모클래스로부터 상속받아 많은 것을 가지고 있기 때문에 문제가 없다.  
     ex) 생물(부모)-사람(자식) => 사람은 생물이다.
@@ -140,8 +140,8 @@ myNum = 8
 as 연산자를 이용하여 타입변환(type casting)이 가능하다. 
  
 |  | Upcasting | Downcasting |
-| as   | 자식인스턴스 as 부모클래스 | as? : 성공 확신이 없을 경우 사용(변환 안되면 : crash) |
-| | | as! : 성공 확신이 있을 경우 사용 |
+| as   | 자식인스턴스 as 부모클래스 | as? : 성공 확신이 없을 경우 사용(변환 안되면 : crash)  ex) 부모인스턴스 <u>as!</u> 자식클래스 |
+| | | as! : 성공 확신이 있을 경우 사용  ex) 부모인스턴스 <u>as?</u> 자식클래스 |
  
 
 
