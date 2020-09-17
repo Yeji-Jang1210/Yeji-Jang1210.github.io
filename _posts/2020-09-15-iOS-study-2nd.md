@@ -274,14 +274,16 @@ else{
 다중 if-else문도 마찬가지로 else if 조건문 다음에 **`{}`**를 필수적으로 사용해야 한다.  
 ex)  
 ```swift
-var num = 3
-if (num == 1 || num == 3){
-    print("남성입니다")
-}else if (num == 2 || num == 4){
-    print("여성입니다")
+var score = 78
+if (score >= 90 && score <= 100){
+  print("A입니다.")
+}else if (score >= 80 && score < 90 ){
+  print("B입니다.")
+}else if (score >= 70 && score < 80 ){
+  print("C입니다.")
 }else {
-    print("대한민국 사람이 아닙니다.")
-}
+  print("노력하세요")
+}//C입니다.
 ```
 <br>
 
