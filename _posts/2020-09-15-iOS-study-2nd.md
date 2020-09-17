@@ -209,7 +209,281 @@ swift에서 사용하는 연산자를 보자
 
 ## Nil-Coalescing Operator (Nil 합병 연산자) [??]
 ---
-* 옵셔널 변수의 값이 nil 이면 다음 값으로 할당됨  
+* 옵셔널 변수의 값이 nil 이면 `??` 다음 값으로 할당됨 
+```swift
+let defaultNum = "981210"
+var classNum : String?
+classNum = "201912038"
+print(classNum)
+var myClassNum = classNum ?? defaultNum
+print(myClassNum)   //결과 : Optional("201912038") 201912038
+```
+classNum이 nil값이 아님으로 옵셔널이 풀려 그냥 String인 201912038이 나온다.  
+
+만약 아래와 같이 classNum값이 nil이라면
+```swift
+let defaultNum = "981210"
+var classNum : String?
+//classNum = "201912038"
+print(classNum)
+var myClassNum = classNum ?? defaultNum
+print(myClassNum)   //결과 : nil 981210
+```
+첫번째 print(classNum)에서는 nil값이 나오고,  
+var myClassNum = classNum `??` defaultNum 문장에서  
+classNum이 nil이므로 `??`뒤에있는 defaultNum값이 적용되어서 981210이라는 String값이나온다.  
+
+<br><br>
+
+# 반복문
+---
+배웠던 프로그래밍 언어들의 반복문과 swift언어에서의 반복문의 차이점을 보자  
+
+## if문
+---
+* if문은 다른 프로그래밍 언어들과 다르게 반복할 문장이 한줄이어도 **`{}`**를 필수적으로 사용해줘야 한다.  
+* else문도 if문과 마찬가지로 **`{}`**를 사용해줘야한다.  
+
+### if문 if-else문
+---
+
+ex)c++의 경우  
+```c++
+int x = 5
+if (x > 10)
+    std::cout << "x는 10보다 큽니다.";
+else 
+    std::cout << "x는 10보다 작습니다.";   
+//결과 : x는 10보다 작습니다. 
+```
+ex) swift의 경우
+```swift
+var x = 15
+if (x > 10){
+    print("x는 10보다 큽니다.")
+}
+else{
+    print("x는 10보다 작습니다.")
+}
+//결과  : x는 10보다 큽니다.
+```
+<br>
+
+### 다중 if-else문
+---
+다중 if-else문도 마찬가지로 else if 조건문 다음에 **`{}`**를 필수적으로 사용해야 한다.  
+ex)  
+```swift
+var num = 3
+if (num == 1 || num == 3){
+    print("남성입니다")
+}else if (num == 2 || num == 4){
+    print("여성입니다")
+}else {
+    print("대한민국 사람이 아닙니다.")
+}
+```
+<br>
+
+### guard문
+---
+swift 2에 도입되어 **false**일 경우 **else절**을 반드시 포함해야한다.  
+    * else절 안에는 return, break, continue, throw 구문을 반드시 포함해야한다.  
+ex)
+```swift
+guard <불리언 표현식> else {
+    //거짓일경우 실행될 코드
+   <return, break, continue ,throw 등의 구문>
+}
+//참일경우 실행될 코드 
+```    
+<br>
+
+## for-in 반복문
+---
+우리가 일반적으로 알고있는  
+ex)  
+```c++
+for(int i=0 ; i<10 ; i++){
+    //반복할문장
+}
+```
+[for 초기화;조건;증감]은 swift 3에서 없어졌다.  
+대신 **for-in** 반복문이라는 것이 나왔는데, 아래처럼 사용한다.  
+```swift
+for 상수명 in 컬렉션 또는 범위
+{
+    //실행될 코드
+}
+```  
+* `상수명` : for-in 반복문이 돌면서 컬렉션 또는 범위에서 가져온 **항목을 담게 될 상수**를 말한다.  
+* `컬렉션 또는 범위` : 반복문이 반보고디면서 현재 항목을 참조한다.  
+ex)
+```swift
+for _ in 1...5{
+    print("hello")
+}
+```
+위의 for-in반복문처럼 i 변수 대신 **`_`** : 생략의 의미를 사용하여 간단하게 반복문을 돌릴 수 있다.  
+
+ex) 배열을 이용한 for-in
+```swift
+let fruits = ["banana", "apple", "orange", "lemon"]
+for fruit in fruits{
+    print(fruit)
+}
+```
+결과) 위의 for-in반복문 결과로는 fruits라는 배열의 항목들이 차례로 출력이 된다.   
+```
+banana
+apple
+orange
+lemon
+```    
+<br>
+
+ex)dictionary를 이용한 for-in
+```swift
+let fruitsNumber = ["banana" : 6, "apple" : 5, "orange" : 4, "lemon" : 3]   //dictionary는 key:value형식의 배열이다.
+for (fruitName, number) in fruitsNumber{
+    print("\(fruitName) : \(number)")
+}
+```
+결과)  
+```
+banana : 6
+apple : 5
+orange : 4
+lemon : 3
+```  
+<br><br>  
+
+## while 반복문 
+---
+for문은 몇 번을 반복할지 정해져있을때 유용하지만 while문은 몇 번을 반복할지 정해져 있지 않을때 즉 조건이 만족할때까지 반복하는 경우 유용하다.  
+ex)  
+```swift
+var myNum = 0
+while myNum < 24 {
+    myNum = myNum + 1
+}
+print(myNum)
+```  
+결과 : 24 (조건이 만족할 시점에 빠져나오므로 24가 나온다.)  
+
+### repeat-while 반복문
+---
+do ... while 반복문을 대신하는 문으로 적어도 한번은 실행한다.  
+ex)  
+```swift
+var i = 10
+repeat {
+  i=i-1
+  print(i)
+}while (i > 0)
+```
+결과)  
+```
+9
+8
+7
+6
+5
+4
+3
+2
+1
+0
+```
+<br>
+
+### break continue 문
+---
+`break`: 무한루프 혹은 반복문에서 빠져나오고 싶을 때 사용한다.  
+ex)
+```swift
+for i in 1..<10{
+    if i > 5 {  //무조건 중괄호 써줘야 함!
+        break
+    }
+    print(i)
+}   //결과 1 2 3 4 5
+```
+<br>
+
+`continue` : continue 이후의 모든 코드를 건너뛰고 반복문의 상단 시작위치로 돌아갈때 사용한다.  
+ex)
+```swift
+for i in 1...10{
+    if i % 2 == 0 { //2로 나누어 나머지가 0일경우(짝수면)
+        continue    //if 문 위로 올라간다.
+    }
+    print(i)    //결과 :  1 3 5 7 9
+}
+```  
+
+### switch-case문
+---
+* 입력한 변수에 일치하는 case를 찾아 case아래의 문장이 실행된다. 
+* 각 case문 안에는 **break**문이 자동적으로 숨어있다.  
+* case문 안에 문장이 없을경우 오류가 나타난다.  
+ex)
+```swift
+var day = 4
+switch (day)
+{
+  case 1:
+    print("월") 
+  case 2:
+    print("화") 
+  case 3:
+    print("수")
+  case 4:
+    print("목") 
+  case 5:
+    print("금")
+  default : 
+    print("주말입니다")          
+}
+//결과 : 목
+```
+case문에는 여러 변수들을 결합할 수도 있다.  
+ex)
+```swift
+var day = 4
+switch (day)
+{
+    case 1, 2, 3, 4, 5:
+        print("평일입니다")
+    default :
+        print("주말입니다")    
+}
+//결과 : 평일입니다.
+```
+<br>
+
+### where절
+---
+* where은 부가적으로 특정 패턴과 결합하여 조건을 추가해주는 역할을 한다.  
+ex) switch문에서의 where사용
+```swift
+var year = 7
+switch (year){
+  case 0...9 where year == 1 || year == 6:
+    print("월요일에 구매가 가능합니다.")
+  case 0...9 where year == 2 || year == 7:
+    print("화요일에 구매가 가능합니다.") 
+  case 0...9 where year == 3 || year == 8:
+    print("수요일에 구매가 가능합니다.") 
+  case 0...9 where year == 4 || year == 9:
+    print("월요일에 구매가 가능합니다.")  
+  case 0...9 where year == 5 || year == 0:
+    print("금요일에 구매가 가능합니다.")    
+  default : 
+    print("다시 입력해 주세요")
+}
+```
+
 
 
 
