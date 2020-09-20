@@ -114,5 +114,5 @@ categories : [JSP]
 1. <u>폼을 이용한 방법</u>  
 ex)  
 ```html
-<form method="get or post">~</form>
+    <form method="get or post">~</form>
 ```
