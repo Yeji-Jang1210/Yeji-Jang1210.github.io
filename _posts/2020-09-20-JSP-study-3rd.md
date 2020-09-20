@@ -21,6 +21,7 @@ categories : [JSP]
 <br>
 
 ### HTTP 메세지의 구조
+---
 1. Start-Line
     * Request-Line │ Status-Line
 1. Message-Headers
