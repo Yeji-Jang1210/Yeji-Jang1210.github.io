@@ -172,7 +172,7 @@ if a is A        //a가 A클래스인가?
 # Any vs AnyObject(Protocol)
 ---
   
-| --- | Any | AnyObject |
+|| Any | AnyObject |  
 | 허용범위 | 클래스, 구조체,열거형 함수타입도 가능 | 클래스의 인스턴스만 가능(구조체,열거형 허용 x) |  
 Any가 AnyObject보다 더 포괄적인 개념이다. 
 * AnyObject 추가설명
