@@ -89,14 +89,7 @@ categories : [JSP]
 ![Image Alt Postman_2]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_3/Postman_3.png"| relative_url}})  
 * 깃허브 블로그 주소를 send한 후, [Headers]창의 결과이다. 프로그램 자체에서 프로토콜을 분석해서 웹브라우저 상에서 동작하는 것이 아닌 독립적인 클라이언트 프로그램을 만든 것이다.
 * URL옆에 부분은 지금은 [Get]방식으로 되어있는데, 아래 화살표키를 눌러 방법을 바꿀 수 있다.   
-    * **`get`** : 기본값으로, 서버에 있는 **정보를 가져오기 위해 설계된 방법**
-        * 형식 : URI?"속성=값&속성=값..."
-        * URL에 값들이 노출되기 때문에 **보안문제**가 발생할 수 있다. 
-        * 웹 클라이언트들이 결과를 캐쉬에 저장할 수 있다.   
-    * **`post`** : 서버로 **정보를 전달하기 위해 설계된 방법**
-        * 서버에 전달할 수 있는 데이터 크기에 대한 제한이 없다.  (get은 있음)
-        * URL이 더 간결해지고 URL에 표시되지 않기 때문에 **보안성이 높다**
-        * 웹 클라이언트들이 결과를 캐쉬에 저장할 수 없다.  
+* GET과 POST  
 
 | --- | GET | POST |
 | 정의 | 서버에 있는 정보를 가져오기 위해 설계된 방법 | 정보를 전달하기 위해 설계된 방법 |
@@ -116,3 +109,35 @@ ex)
 ```html
     <form method="get or post">~</form>
 ```
+<br><br>
+
+## IntelliJ IDEA 한글 문제 해결
+---
+IntelliJ에서 한글메세지가 정상적으로 표현되지 않을 때 해결하는 방법이다.  
+
+1. [File]-[Settings]-[Editor]-[File and Code Templates]-[other]-[JSP files]를 들어간 후,  "<%@ page contentType="text/html;charset=UTF-8" `pageEncoding="UTF-8"` language="java" %>"로 작성해준다.  
+    ![Image Alt JSP_1]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_3/JSP_1.png"| relative_url}})  
+1. 우측상단에 돋보기를 누른 후, [Actions]에 VM을 검색 후, [Edit Custom VM Options]를 클릭 후 창이 나오면 제일 밑에 `-Dfile.encoding=UTF-8`를 작성한 후 재실행 해준다.  
+    ![Image Alt JSP_2]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_3/JSP_2.png"| relative_url}})  
+1. 한글이 잘 나오는지 확인하기 위해 JSP파일을 새로 만들고 아래부분을 입력했다.  
+    ```JSP
+    <body>
+    <%= "테스트를 실행합니다."%>
+    </body>
+    ``` 
+1. 톰캣을 설정해주고 [RUN]하면 결과가 나온다.         
+    ![Image Alt JSP_3]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_3/JSP_3.png"| relative_url}})  
+<br><br>
+
+### IntelliJ 실습하며 생긴 오류
+---
+localhost:8080/test.jsp로 실행했을때 화면이 위와 같이 나와야하는데  
+http://localhost:8080/Gradle___iducs_jsp201912038___webapp2020_1_0_war/ 이런경로로 들어가야 나오는 상황이 발생했었다.  
+이런 경우에는 Run/Debug Configurations에 들어가 [Tomcat Server]-[Deployment]의 [Application context]를 확인해주자.  
+![Image Alt JSP_4]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_3/JSP_4.png"| relative_url}})  
+위 그림과 같이 되어있으면 경로를 지우고 **`/`**만 남겨준다.  
+![Image Alt JSP_5]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_3/JSP_5.png"| relative_url}})  
+이부분도 확인해주자.  
+
+
+
