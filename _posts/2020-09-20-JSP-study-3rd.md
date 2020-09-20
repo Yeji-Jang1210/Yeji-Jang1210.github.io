@@ -18,6 +18,8 @@ categories : [JSP]
 ## HTTP 메세지(Message)
 ---
 * HTTP 대화의 기본단위(basic unit of HTTP communication)이다. 
+<br>
+
 ### HTTP 메세지의 구조
 1. Start-Line
     * Request-Line │ Status-Line
