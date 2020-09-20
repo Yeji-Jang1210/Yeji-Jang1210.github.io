@@ -64,3 +64,28 @@ categories : [JSP]
     * Content-Encoding(`Content-Type`(data))
         * `Content-Type` : 항목에 지정된 값으로 자원의 종류를 구별해준다. `MIME`사용.  
             * `MIME` : Multipurpose Internet Mail Extensions
+
+## Postman
+---
+* API 개발을 위한 협동 플랫폼으로 API 개발의 생산성을 높여주는 플랫폼이다.  
+<br>  
+
+### 설치
+---
+* [Postman 경로로 다운받는다.](https://www.postman.com/downloads/)
+* 가입을 하면 웹상으로도 Postman을 이용할 수 있다고 한다.  
+
+### 가입
+---
+![Image Alt Postman_1]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_3/Postman_1.png"| relative_url}})    
+* 설치하고 처음 나오는 화면이다.  
+* 구글 아이디로도 다운을 받을 수 있다.   
+
+### 실행
+![Image Alt Postman_2]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_3/Postman_2.png"| relative_url}})  
+* 실행화면의 `+`버튼을 눌러 URL을 입력한 후, `Send`버튼을 누른다.  
+<br>
+
+![Image Alt Postman_2]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_3/Postman_3.png"| relative_url}})  
+* 깃허브 블로그 주소를 send한 후, [Headers]창의 결과이다. 프로그램 자체에서 프로토콜을 분석해서 웹브라우저 상에서 동작하는 것이 아닌 독립적인 클라이언트 프로그램을 만든 것이다.  
+* 아래 Body와 Header부분은 응답헤더, 응답 바디들을 확인 할 수 있다.  
