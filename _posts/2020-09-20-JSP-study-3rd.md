@@ -119,6 +119,7 @@ IntelliJ에서 한글메세지가 정상적으로 표현되지 않을 때 해결
     ![Image Alt JSP_1]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_3/JSP_1.png"| relative_url}})  
 1. 우측상단에 돋보기를 누른 후, [Actions]에 VM을 검색 후, [Edit Custom VM Options]를 클릭 후 창이 나오면 제일 밑에 `-Dfile.encoding=UTF-8`를 작성한 후 재실행 해준다.  
     ![Image Alt JSP_2]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_3/JSP_2.png"| relative_url}})  
+    <br>
 1. 한글이 잘 나오는지 확인하기 위해 JSP파일을 새로 만들고 아래부분을 입력했다.  
     ```JSP
     <body>
@@ -132,10 +133,12 @@ IntelliJ에서 한글메세지가 정상적으로 표현되지 않을 때 해결
 ### IntelliJ 실습하며 생긴 오류
 ---
 localhost:8080/test.jsp로 실행했을때 화면이 위와 같이 나와야하는데  
-http://localhost:8080/Gradle___iducs_jsp201912038___webapp2020_1_0_war/ 이런경로로 들어가야 나오는 상황이 발생했었다.  
-이런 경우에는 Run/Debug Configurations에 들어가 [Tomcat Server]-[Deployment]의 [Application context]를 확인해주자.  
+*http://localhost:8080/Gradle___iducs_jsp201912038___webapp2020_1_0_war/* 이런경로로 들어가야 나오는 상황이 발생했었다.  
+이런 경우에는 **Run/Debug Configurations에 들어가 [Tomcat Server]-[Deployment]의 [Application context]를 확인해주자.**  
+<br>
 ![Image Alt JSP_4]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_3/JSP_4.png"| relative_url}})  
-위 그림과 같이 되어있으면 경로를 지우고 **`/`**만 남겨준다.  
+위 그림과 같이 되어있으면 경로를 지우고 **`/`**만 남겨준다.
+<br>  
 ![Image Alt JSP_5]({{"/assets/img/posting/Study_JSP_img/Study_JSP_post_3/JSP_5.png"| relative_url}})  
 이부분도 확인해주자.  
 
