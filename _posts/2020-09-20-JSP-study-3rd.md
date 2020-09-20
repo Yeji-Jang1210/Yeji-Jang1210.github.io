@@ -18,8 +18,7 @@ categories : [JSP]
 ## HTTP 메세지(Message)
 ---
 * HTTP 대화의 기본단위(basic unit of HTTP communication)이다. 
-* HTTP 메세지의 구조
----
+### HTTP 메세지의 구조
 1. Start-Line
     * Request-Line │ Status-Line
 1. Message-Headers
@@ -30,10 +29,10 @@ categories : [JSP]
         * LF(Life Feed) : 커서의 위치는 그대로 두고 종이를 한 라인 위로 옮기는 동작
         * *출저)[CRLF](https://m.blog.naver.com/PostView.nhn?blogId=pthread_join&logNo=220720777376&proxyReferer=https:%2F%2Fwww.google.com%2F)
 1. Message Body(메소드의 형태에 따라 다름)
-    * entity-body │ <entity-body encoded as per Transfer-Encoding>
+    * entity-body │ entity-body encoded as per Transfer-Encoding
 <br>
 
-* **요청** 메시지(Request Message), 요청 포맷의 경우 : 브라우저가 서버에게
+### **요청** 메시지(Request Message), 요청 포맷의 경우 : 브라우저가 서버에게
 ---
 1. Request-Line
     * `Method` SP `Request-URI` SP `HTTP-Version` CRLF
@@ -48,7 +47,7 @@ categories : [JSP]
 1. [Message-Body(Payload)] : 있을수도 있고 없을수도 있음   
 <br>
 
-* **응답** 메세지(Response Message), 응답포맷 : 서버가 클라이언트에게
+### **응답** 메세지(Response Message), 응답포맷 : 서버가 클라이언트에게
 ---
 1. Status-Line
     * HTTP-Version SP `Status-Code` SP `Reason-Phrase` CRLF
