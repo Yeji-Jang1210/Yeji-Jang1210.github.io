@@ -274,45 +274,44 @@ sayHello()
 ### 후행 클로저(trailing closure)
 ---
 클로저가 함수의 마지막 인자(argument)라면 마지막 매개변수 이름을 생략 후 함수 소괄호 외부에 구현한다.  
-* 클로저 축약 및 예제
+* 클로저 축약 및 예제  
+
 ```swift
-let fruits = {(fruit:String, fruit2:String)->String in return("과일:\(fruit),\(fruit2)")}
-var result = fruits("사과","바나나")
-//print(result)
+    let fruits = {(fruit:String, fruit2:String)->String in return("과일:\(fruit),\(fruit2)")}
+    var result = fruits("사과","바나나")
+    //print(result)
 
-let animals = {(animal:String, animal2:String)->String in return("동물:\(animal),\(animal2)")}
-var result2 = animals("고양이","강아지")
-//print(result2)
+    let animals = {(animal:String, animal2:String)->String in return("동물:\(animal),\(animal2)")}
+    var result2 = animals("고양이","강아지")
+    //print(result2)
 
-func kinds(object:String, object2:String, kind: (String, String)-> String) -> String {
-  return kind(object,object2)
-}
-result = kinds(object : "키위",object2 : "오렌지", kind : fruits)
-//print(result)
+    func kinds(object:String, object2:String, kind: (String, String)-> String) -> String {
+    return kind(object,object2)
+    }
+    result = kinds(object : "키위",object2 : "오렌지", kind : fruits)
+    //print(result)
 
-result = kinds(object : "키위", object2 : "오렌지", kind : {(fruit:String, fruit2:String) -> 
-String in return("과일:\(fruit),\(fruit2)")
- })
-//print(result)
+    result = kinds(object : "키위", object2 : "오렌지", kind : {(fruit:String, fruit2:String) -> 
+    String in return("과일:\(fruit),\(fruit2)")
+    })
+    //print(result)
 
-result = kinds(object : "키위", object2 : "오렌지", kind : {(fruit:String, fruit2:String) in return("과일:\(fruit),\(fruit2)")
- })
-//print(result) //리턴형 생략
+    result = kinds(object : "키위", object2 : "오렌지", kind : {(fruit:String, fruit2:String) in return("과일:\(fruit),\(fruit2)")
+    })
+    //print(result) //리턴형 생략
 
-result = kinds(object : "키위", object2 : "오렌지", kind : { return("과일:\($0),\($1)")
- })
-//print(result) //매개변수 생략 후 단축인자 사용
+    result = kinds(object : "키위", object2 : "오렌지", kind : { return("과일:\($0),\($1)")
+    })
+    //print(result) //매개변수 생략 후 단축인자 사용
 
-result = kinds(object : "키위", object2 : "오렌지")
- { return("과일:\($0),\($1)")}
-//print(result) //매개변수 생략 후 단축인자 사용
+    result = kinds(object : "키위", object2 : "오렌지")
+    { return("과일:\($0),\($1)")}
+    //print(result) //매개변수 생략 후 단축인자 사용
 
-result = kinds(object : "키위", object2 : "오렌지",
- kind: { "과일:\($0),\($1)" })
-//print(result) //마지막 줄을 리턴하므로 return 생략
+    result = kinds(object : "키위", object2 : "오렌지",
+    kind: { "과일:\($0),\($1)" })
+    //print(result) //마지막 줄을 리턴하므로 return 생략
 
-result = kinds(object : "키위", object2 : "오렌지"){ "과일:\($0),\($1)" }
-print(result) //return 생략
-
-
+    result = kinds(object : "키위", object2 : "오렌지"){ "과일:\($0),\($1)" }
+    print(result) //return 생략
 ```
