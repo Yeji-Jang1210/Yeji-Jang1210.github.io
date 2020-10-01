@@ -82,12 +82,14 @@ Yeji.classMethod2()
 
 ##### stored property
 ---
+
 ```swift
 class Yeji{
     let name : String
     var age : Int   //stored property
 }
 ```
+
 저장 프로퍼티는 클래스안에 있는 일반적인 프로퍼티를 말한다.  
 저장 프로퍼티는 초깃값을 주지 않으면 에러가 위의 소스가 그 경우이다.  
 초기값을 주는 방법은,  
@@ -98,7 +100,8 @@ class Yeji{
 
 ###### init
 ---
-* init 메서드를 이용하여 생성자를 만들 수 있다.  
+* init 메서드를 이용하여 생성자를 만들 수 있다.   
+
 ```swift
 class Yeji{
     var name : String
@@ -111,19 +114,21 @@ class Yeji{
         age = myAge
     }//생성자
 }
-
 //var jyg : Yeji = Yeji() //오류
 var jyg : Yeji = Yeji(myName : "YejiJang", myAge : 23)
 jyg.myPrint()   //결과 :  이름 : YejiJang, 나이 : 23
 ```
+
 * 생성자를 하나라도 만들 경우, default생성자를 호출할 경우 오류가 난다.  
 <br><br>
 
 ###### failable initializer(실패 가능한 생성자 init? init!)
 ---
+
 init 다음에 물음표(?)나 느낌표(!)를 사용하면 옵셔널 값이 리턴된다.  
-ex)init?(name:String)
-ex)실패가능한 생성자가 있는 인스턴스 생성과 옵셔널 바인딩, 강제 언래핑
+ex)init?(name:String)  
+ex)실패가능한 생성자가 있는 인스턴스 생성과 옵셔널 바인딩, 강제 언래핑  
+
 ```swift
 class Yeji{
     var name : String
@@ -142,27 +147,22 @@ class Yeji{
         self.name = name
     }//생성자
 }
-
 //1)옵셔널 형 선언 후 옵셔널 바인딩
 var yeji : Yeji? = Yeji(name : "Yeji" ,  age : 23)
 if let yeji1 = yeji{
   yeji1.myPrint()
   }
-
 //2)인스턴스 생성과 동시에 옵셔널 바인딩 많이사용
 if let yeji2 = Yeji(name : "Yeji", age : 23) {
   yeji2.myPrint()
 }
-
 //3)인스턴스 생성 후 강제 언래핑
 var yeji3 : Yeji = Yeji(name : "Yeji", age : 23)!
 yeji3.myPrint()
-
 //4)옵셔널 인스턴스를 사용시 강제 언래핑
 if let yeji2 = Yeji(name : "Yeji", age : 23){
   yeji2.myPrint()
 }
-
 ```
 * 강제 언래핑의 방법 같은 경우 결과가 nil값을 반환한다면 위험하다(crash)  
 
@@ -183,7 +183,6 @@ class Yeji{
         self.age = age//age = myAge
     }//생성자
 }
-
 //var jyg : Yeji = Yeji() //오류
 var jyg : Yeji = Yeji(name : "YejiJang", age : 23)
 jyg.myPrint()   //결과 :  이름 : YejiJang, 나이 : 23
@@ -213,14 +212,14 @@ class Yeji{
         self.height = height
     }//생성자
 }
-
 var jyg : Yeji = Yeji(name : "YejiJang", height : 1.61)
 jyg.myPrint()   //결과 : 이름 : YejiJang, 키 : 1.61m
 print(jyg.cmHeight) //결과 : 161.0
 ```
+
 <br>
 
-ex)setter까지 있는 경우
+ex)setter까지 있는 경우  
 ```swift
 class Yeji{
     var name : String //stored property
@@ -241,7 +240,6 @@ class Yeji{
         self.height = height
     }//생성자
 }
-
 var jyg : Yeji = Yeji(name : "YejiJang", height : 1.61)
 print(jyg.cmHeight) //결과 : 161.0
 jyg.cmHeight = 163.1
