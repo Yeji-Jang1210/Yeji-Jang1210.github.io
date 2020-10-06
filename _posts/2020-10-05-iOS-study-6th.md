@@ -92,3 +92,27 @@ jang.printMe() // 나이 : 23, 이름 : 자식, 키 : 171.2cm
 ```
 부모 클래스는 상속의 예시부분에 적어놓은 클래스와 같고 위의 소스는 부모의 함수를 overriding한 것이다. 재정의할 함수 앞에 `override`를 적어주면 된다.  
 자식클래스에서 함수를 호출하면 부모클래스의 함수가 아닌 자식클래스에서 재정의한 함수가 호출된다.  
+<br><br>
+
+# Extension(익스텐션)
+---
+```swift
+extension 기존클래스 {
+    //새로운 기능
+}
+```
+* swift 클래스, 구조체, 열거형, 프로토콜에 새로운 기능을 추가할 수 있는 것을 말한다.  
+* 자식클래스를 생성/참조 하지 않고 기존 클래스에 기능을 추가하기 위해 사용한다.  
+
+extension의 예시)  
+```swift
+extension Double {
+  var meter : Double{
+    return self * 0.01  //self:값
+  }
+}
+let centimeter : Double = 161.0
+print("\(centimeter.meter)m")   //1.61m
+print("\(161.0.meter)m")    // 결과 : 1.61m
+//Double 형 값에도 (.)으로 바로 사용이 가능하다.
+```
