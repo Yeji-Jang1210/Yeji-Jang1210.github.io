@@ -13,12 +13,13 @@ categories : [iOS]
 * Java나 C#의 인터페이스같은 역할
 * C++의 abstract base class역할을 한다.(추상 부모 클래스)  
 * **Protocol Oriented Programming(POP)** : 프로토콜 단위로 묶어 표현한 것, extension으로 기본적인 것을 구현하여 swift상속의 단점인 단일 상속의 한계를 극복한다.  
-ex)
+ex)   
 ```swift
 class Child : ParentsClass, Protocol1, Protocol2 {
 
 }
-```
+```  
+
 스위프트에서 상속은 단일상속밖에 불가능하며, 부모클래스 뒤에 온 클래스들은 프로토콜이다.  
 클래스, 구조체, 열거형, extension에 프로토콜을 `채택(adopt)`할수있음.  <br><br>
 
