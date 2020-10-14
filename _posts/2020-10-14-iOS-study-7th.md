@@ -12,7 +12,8 @@ categories : [iOS]
     * 클래스(구조체,열거형)에서 `채택`하여 메서드를 꼭 구현해야 한다.  
 * Java나 C#의 인터페이스같은 역할
 * C++의 abstract base class역할을 한다.(추상 부모 클래스)  
-* **Protocol Oriented Programming(POP)** : 프로토콜 단위로 묶어 표현한 것, extension으로 기본적인 것을 구현하여 swift상속의 단점인 단일 상속의 한계를 극복한다.  
+* **Protocol Oriented Programming(POP)** : 프로토콜 단위로 묶어 표현한 것, extension으로 기본적인 것을 구현하여 swift상속의 단점인 단일 상속의 한계를 극복한다.   
+
 ex)   
 
 ```swift
