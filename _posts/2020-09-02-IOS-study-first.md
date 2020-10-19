@@ -52,5 +52,8 @@ categories : [iOS]
 * 결과:  
     ![Image Alt ios과제_결과]({{"/assets/img/posting/Study_iOS_img/Study_iOS_post1/ios_1주차_과제.png"| relative_url}})    
 
+<br><br>
+
+*출처)[SmileHan Swift 강좌](http://www.youtube.com/watch?v=N270hpSqshk&list=PLJqaIeuL7nuEEROQDRcy4XxC9gU6SYYXb&index=2)*
 
 

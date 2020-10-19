@@ -140,3 +140,5 @@ print("\(161.0.meter)m")    // 결과 : 1.61m
 
 * `모듈` : 코드 배포(code distribution)의 단일 유닛
   * ex) app, Framework(UIKit 등), 외부 라이브러리
+
+  *출처)[Smile Han Swift 6주차](https://www.youtube.com/channel/UCM8wseo6DkA-D7yGlCrcrwA/playlists)*

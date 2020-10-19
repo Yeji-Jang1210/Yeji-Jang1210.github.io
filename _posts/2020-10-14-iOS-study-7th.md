@@ -53,3 +53,6 @@ print(yeji.num) //1
 **클래스 안에 정의하면 되지 왜 프로토콜을 사용하나?**  
 클래스에 선언 한다면 A,B의 클래스의 기능을 모두 상속받고 싶지만 swift에서는 단일 상속만이 가능하기 때문에,  
 프로토콜을 채택하여 클래스에 구현하면 여러 기능을 사용할수 있다.  
+
+
+*출처)[Smile Han Swift 7주차](https://www.youtube.com/channel/UCM8wseo6DkA-D7yGlCrcrwA/playlists)*

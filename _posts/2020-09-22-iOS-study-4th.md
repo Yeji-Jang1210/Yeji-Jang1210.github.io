@@ -315,3 +315,7 @@ sayHello()
     result = kinds(object : "키위", object2 : "오렌지"){ "과일:\($0),\($1)" }
     print(result) //return 생략
 ```
+
+<br><br>
+
+*출처)[Smile Han Swift 4주차](https://www.youtube.com/watch?v=hlc_31NReVQ&list=PLJqaIeuL7nuEEROQDRcy4XxC9gU6SYYXb&index=39)*

@@ -216,3 +216,7 @@ Influenced by | objective-C, Rust, Haskell, Ruby, Python, C#, CLU, D
 * 특정 튜플 값은 인덱스 위치를 참조하면 간단하게 접근이 가능하다.  
 0부터 시작한다. 
 * 무시하고 싶은 값은 밑줄(_)을 사용하면 그 값은 무시된다.   
+
+<br><br>
+
+*출처)[Smile Han Swift2주차](https://www.youtube.com/watch?v=78F4R49hWaw&list=PLJqaIeuL7nuEEROQDRcy4XxC9gU6SYYXb&index=11)*
