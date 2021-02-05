@@ -20,8 +20,7 @@ opencv_world451.dll은 Release파일용이고 opencv_world451.d.dll은 Debug용�
 
 ## 1. opencv로 이미지 읽기 및 열기
 ---
-1. opencv라이브러리를 사용하기 위해 라이브러리를 include해준다.  
-
+**opencv라이브러리를 사용하기 위해 라이브러리를 include해준다.**  
 ```c++
 #include <opencv2/core.hpp>
 #include <opencv2/imgcodecs.hpp>
@@ -32,7 +31,7 @@ using namespace cv;
 
 <br>
 
-2. 이미지 경로 및 읽기  
+**이미지 경로 및 읽기**  
 
 ```c++
  String imgPath = samples::findFile(imname);  //이미지 경로 저장
@@ -42,9 +41,7 @@ using namespace cv;
         printf("파일을 읽을 수 없음");
         return 1;
     }
-```
-<br>
-
+```  
 samples::findFile()은 cv namespace안에있는 samples namespace의 findFile()을 사용한다는 뜻이다.  
 findFile(imname)은 이미지 파일의 경로를 저장하는데 상대경로로 파일을 찾아 경로를 저장한다.  
 아래 그림은 [findFile](https://docs.opencv.org/master/d6/dba/group__core__utils__samples.html#ga3a33b00033b46c698ff6340d95569c13)의 설명이다.  
@@ -55,7 +52,7 @@ imread()는 이미지경로를 읽어 색상을 어떤형식으로 줄 것인지
 
 <br>
 
-3. 이미지 출력  
+**이미지 출력**  
 
 ```c++
 imshow("img", img);//imshow(디스플레이 이름,mat형식의 이미지 표시)
@@ -63,7 +60,8 @@ waitKey();
 ```
 
 imshow는 윈도우창에 띄울 제목(이름)을 표시하고 이미지를 띄운다.  
-그리고 waitKey를 사용해 얼마나 지속시킬건지 정하는데 위처럼 아무것도 적지 않는 다면 다른 키를 입력하기 전까지 이미지를 띄우는 것을 지속시킨다는 뜻이다.  
+그리고 waitKey를 사용해 얼마나 지속시킬건지 정하는데 위처럼 아무것도 적지 않는다면  
+다른 키를 입력하기 전까지 이미지를 띄우는 것을 지속시킨다는 뜻이다.  
 
 <br><br>
 
@@ -91,8 +89,8 @@ imshow는 윈도우창에 띄울 제목(이름)을 표시하고 이미지를 띄
 따라서 opencv안에 있는 Mat클래스는 Matrix의 줄임말이다.  
 rotationImg함수로 이미지와 각도를 받아 회전시키는데 위의 소스는 함수의 일부이다.  
 값을 받아와 실질적으로 회전을 하는 for문인데 회전행렬을 하기 위해서는 cos와 sin이 필요해 **math.h**라이브러리도 include했다.  
-[회전행렬](https://gaussian37.github.io/math-la-rotation_matrix/)을 참고하여 작성했다.  
-회전시킬 이미지를 띄울 Mat img를 하나 만든 후 [i,j]를 회전시켜 그에 해당하는 값을 원본에서 가져오는데
+행렬의 회전원리는 [회전행렬](https://gaussian37.github.io/math-la-rotation_matrix/)을 참고하여 작성했다.  
+회전시킬 이미지를 띄울 Mat img를 하나 만든 후 [i , j]를 회전시켜 그에 해당하는 값을 원본에서 가져오는데
 이렇게 할경우 겹치는 값이 생기기 때문에 최대한 근사한 값을 찾아 대입해줘야한다.  
 그래서 estimateValue라는 함수를 만들어 값을 추측해 대입한다.  
 아래 그림은 estimateValue의 원리이다.  
