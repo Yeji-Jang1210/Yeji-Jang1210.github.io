@@ -1,9 +1,12 @@
----
-layout : post
-title : "Qt_WinForm TrayIcon"
-featured-img: JSP-study
-categories : [Cpp]
----
+# tray icon
+
+Assign: 예지 장, Durkhyun Cho
+Progress: 50
+Progress Bar: █████⠀⠀⠀⠀⠀ 50%
+Project: 제일기계GUI
+Status: In progress
+시작일: 2021년 2월 26일
+
 # **1. QT**
 
 mainWindow.h와 mainWindow.cpp에 추가
@@ -57,19 +60,19 @@ setIcon(QIcon icon); - 아이콘을 설정
 
 setContextMenu(trayIconMenu); - QMenu클래스형으로 만든 메뉴를 트레이 아이콘의 메뉴로 지정
 
-![assets/img/posting/trayIcon_img/Untitled.png](assets/img/posting/trayIcon_img/Untitled.png)
+![tray%20icon%201de3813c406948809ac9399022ec6271/Untitled.png](tray%20icon%201de3813c406948809ac9399022ec6271/Untitled.png)
 
 setToolTip("Tray Program");
 
-![assets/img/posting/trayIcon_img/Untitled%201.png](assets/img/posting/trayIcon_img/Untitled%201.png)
+![tray%20icon%201de3813c406948809ac9399022ec6271/Untitled%201.png](tray%20icon%201de3813c406948809ac9399022ec6271/Untitled%201.png)
 
 QSystemTrayIcon Signal을 발생
 
-![assets/img/posting/trayIcon_img/Untitled%202.png](assets/img/posting/trayIcon_img/Untitled%202.png)
+![tray%20icon%201de3813c406948809ac9399022ec6271/Untitled%202.png](tray%20icon%201de3813c406948809ac9399022ec6271/Untitled%202.png)
 
 createTrayIconMenu();
 
-![assets/img/posting/trayIcon_img/Untitled%203.png](assets/img/posting/trayIcon_img/Untitled%203.png)
+![tray%20icon%201de3813c406948809ac9399022ec6271/Untitled%203.png](tray%20icon%201de3813c406948809ac9399022ec6271/Untitled%203.png)
 
 showMessage(title, message,icon,msTimeoutHint);
 
@@ -96,11 +99,11 @@ void mainWindow::createTrayIconMenu()
 }
 ```
 
-![assets/img/posting/trayIcon_img/Untitled%204.png](assets/img/posting/trayIcon_img/Untitled%204.png)
+![tray%20icon%201de3813c406948809ac9399022ec6271/Untitled%204.png](tray%20icon%201de3813c406948809ac9399022ec6271/Untitled%204.png)
 
 QWidget의 Slots
 
-![assets/img/posting/trayIcon_img/Untitled%205.png](assets/img/posting/trayIcon_img/Untitled%205.png)
+![tray%20icon%201de3813c406948809ac9399022ec6271/Untitled%205.png](tray%20icon%201de3813c406948809ac9399022ec6271/Untitled%205.png)
 
 QAction의 Signal
 
@@ -144,7 +147,7 @@ mainWindow에서 Signal이 발생했을때 받는  SLOT의 함수
 
 1. notifyIcon (상속 불가)
 
-![assets/img/posting/trayIcon_img/Untitled%206.png](assets/img/posting/trayIcon_img/Untitled%206.png)
+![tray%20icon%201de3813c406948809ac9399022ec6271/Untitled%206.png](tray%20icon%201de3813c406948809ac9399022ec6271/Untitled%206.png)
 
 - 사용시 Visible =  true로 설정 (this.notifyIcon.Visigle = true;)
 - ContextmenuStrip : 트레이 아이콘의 메뉴를 사용가능
@@ -154,9 +157,9 @@ mainWindow에서 Signal이 발생했을때 받는  SLOT의 함수
 
 2. ContextMenuStrip
 
-![assets/img/posting/trayIcon_img/Untitled%207.png](assets/img/posting/trayIcon_img/Untitled%207.png)
+![tray%20icon%201de3813c406948809ac9399022ec6271/Untitled%207.png](tray%20icon%201de3813c406948809ac9399022ec6271/Untitled%207.png)
 
-![assets/img/posting/trayIcon_img/Untitled%208.png](assets/img/posting/trayIcon_img/Untitled%208.png)
+![tray%20icon%201de3813c406948809ac9399022ec6271/Untitled%208.png](tray%20icon%201de3813c406948809ac9399022ec6271/Untitled%208.png)
 
 - notifyIcon 오른쪽 마우스 눌렀을 때 나타나는 메뉴
 - [도구상자]-[contextMenuStrip]으로 드래그 후 추가
@@ -224,7 +227,7 @@ form2.Location의 위치는 메인 폼의 옆에 위치한다.
 
 3.4. balloonTip
 
-![assets/img/posting/trayIcon_img/Untitled%209.png](assets/img/posting/trayIcon_img/Untitled%209.png)
+![tray%20icon%201de3813c406948809ac9399022ec6271/Untitled%209.png](tray%20icon%201de3813c406948809ac9399022ec6271/Untitled%209.png)
 
 notifyIcon에 알림기능을 추가 balloonTip의 알림이 사라질때 아래 작업표시줄의 notifyIcon도 함께 사라짐
 
@@ -280,4 +283,4 @@ public Main1()
 Main1.Notifier.ShowBalloonTip(1000,"hello", "this is Form2",ToolTipIcon.Info);
 ```
 
-![assets/img/posting/trayIcon_img/Untitled%2010.png](assets/img/posting/trayIcon_img/Untitled%2010.png)
+![tray%20icon%201de3813c406948809ac9399022ec6271/Untitled%2010.png](tray%20icon%201de3813c406948809ac9399022ec6271/Untitled%2010.png)
