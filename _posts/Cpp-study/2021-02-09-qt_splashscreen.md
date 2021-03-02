@@ -100,6 +100,7 @@ Main1 : [https://github.com/yejiJang-COGAPLEX/testSource_Csharp/blob/master/test
 <br>
 
 2. QT  
+
 ```cpp
 int main(int argc, char *argv[])
 {
@@ -130,7 +131,6 @@ int main(int argc, char *argv[])
     w->show();
     return a.exec();
 }
-
 std::future<void> loadSplashScreen(QSplashScreen* screen,int seconds, const QString &filePath) //return type future
 {
     QPixmap* img = new QPixmap(filePath);
