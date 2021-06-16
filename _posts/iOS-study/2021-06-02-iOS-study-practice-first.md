@@ -9,7 +9,7 @@ categories : [iOS]
 
 Table View Add New Constraints 로 Table View화면 전체를 채움
 
-![image1]({{"/assets/img/posting/2021-06-02-iOS-study-practice-first/Untitled.png"| relative_url}})
+![image1]({{"/assets/img/posting/Study_iOS_img/2021-06-02-iOS-study-practice-first/Untitled.png"| relative_url}})
 
 Assistant(ctrl+command+alt+enter)로 Table View의 outlet을 만들기
 
@@ -61,9 +61,9 @@ style을 .default 가 아닌 .subtitle을 적용하고 ,section수를 3개로 �
 
 → 기본적인 설정 외 다른 형식이 필요하다면 tableView Cell을 추가해서 구현하면 된다.
 
-![Untitled6.png]({{"/assets/img/posting/Study_iOS_img/2021-06-02-iOS-study-practice-first/Study_iOS_img/Untitled6.png"| relative_url}})
+![Untitled6.png]({{"/assets/img/posting/Study_iOS_img/2021-06-02-iOS-study-practice-first/Untitled6.png"| relative_url}})
 
-![Untitled7.png]({{"/assets/img/posting/Study_iOS_img/2021-06-02-iOS-study-practice-first/Study_iOS_img/Untitled7.png"| relative_url}})
+![Untitled7.png]({{"/assets/img/posting/Study_iOS_img/2021-06-02-iOS-study-practice-first/Untitled7.png"| relative_url}})
 
 ![Untitled8.png]({{"/assets/img/posting/Study_iOS_img/2021-06-02-iOS-study-practice-first/Untitled8.png"| relative_url}})
 
@@ -89,7 +89,7 @@ cocoa touch file로 custom할 cell의 클래스를 만들어준다.
 
 오브젝트들을 끌어서 cell안에 넣어준다.
 
-![Untitled13.png]({{"/assets/img/posting/2021-06-02-iOS-study-practice-first/Untitled13.png"| relative_url}})
+![Untitled13.png]({{"/assets/img/posting/Study_iOS_img/2021-06-02-iOS-study-practice-first/Untitled13.png"| relative_url}})
 
 label을 MyTableViewCell에 connect해준다
 
