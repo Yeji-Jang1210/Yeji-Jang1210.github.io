@@ -1,3 +1,10 @@
+---
+layout : post
+title : "open API를 이용한 tableView"
+featured-img: ios-study
+categories : [iOS]
+---
+
 # open API를 이용한 tableView
 
 # open API?
