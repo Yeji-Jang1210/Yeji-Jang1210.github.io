@@ -56,21 +56,21 @@ categories : [iOS]
 
 1. [영화진흥 위원회](https://www.kobis.or.kr/kobisopenapi/homepg/main/main.do) 홈페이지 가입 후 [키 발급/관리]에서 키를 발급받는다.
 
-![{{"/assets/img/posting/Study_iOS_img/2021-06-05-iOS-study-practice-second/Untitled.png"}}]({{"/assets/img/posting/Study_iOS_img/2021-06-05-iOS-study-practice-second/Untitled.png"}})
+![Untitled.png]({{"/assets/img/posting/Study_iOS_img/2021-06-05-iOS-study-practice-second/Untitled.png"}})
 
 2.  응답 예시 처럼 json?key=발급받은키&targetDt=확인날짜(-1일) 형태로 사용한다.
 
-![{{"/assets/img/posting/Study_iOS_img/2021-06-05-iOS-study-practice-second/Untitled1.png"}}]({{"/assets/img/posting/Study_iOS_img/2021-06-05-iOS-study-practice-second/Untitled1.png"}})
+![Untitled1.png]({{"/assets/img/posting/Study_iOS_img/2021-06-05-iOS-study-practice-second/Untitled1.png"}})
 
 3. code beutify를 사용해 데이터를 깔끔하게 확인 할 수 있다.
 
-![{{"/assets/img/posting/Study_iOS_img/2021-06-05-iOS-study-practice-second/Untitled2.png"}}]({{"/assets/img/posting/Study_iOS_img/2021-06-05-iOS-study-practice-second/Untitled2.png"}})
+![Untitled2.png]({{"/assets/img/posting/Study_iOS_img/2021-06-05-iOS-study-practice-second/Untitled2.png"}})
 
 # Xcode에서의 사용법
 
 ---
 
-![{{"/assets/img/posting/Study_iOS_img/2021-06-05-iOS-study-practice-second/Untitled3.png"}}]({{"/assets/img/posting/Study_iOS_img/2021-06-05-iOS-study-practice-second/Untitled3.png"}})
+![Untitled3.png]({{"/assets/img/posting/Study_iOS_img/2021-06-05-iOS-study-practice-second/Untitled3.png"}})
 
 ```swift
 struct MovieData : Codable{
