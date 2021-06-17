@@ -1,3 +1,10 @@
+---
+layout : post
+title : "modalTransitionStyle - 화면전환"
+featured-img: ios-study
+categories : [iOS]
+---
+
 # open API를 이용한 movieApp만들기(2) - 화면전환
 
 1. coverVertical : 아래에서 위로 올라옴
